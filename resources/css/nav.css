@@ -1,0 +1,226 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12pt;
+}
+
+.top {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  padding: 15px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 30%);
+}
+ .logo{
+   position: absolute;
+   top: 22px;
+   left: 10%;
+ }
+
+ .homeBack {
+   /*width: 100%;*/
+   height: 700px;
+   background-image: url("/img/homeImageDark.jpg");
+   background-color: #FF5757;
+   background-repeat: no-repeat;
+   /*background-size: auto 100%;*/
+   background-size: cover;
+   background-position: center center;
+ }
+
+ .homeBack div {
+   text-align: center;
+   color: white;
+ }
+ .homeBack h1 {
+   padding-top: 240px;
+   font-size: 50pt;
+   margin-right: 100px;
+   margin-left: 100px;
+   line-height: 1;
+ }
+ .homeBack p {
+   margin-top: -30px;
+   margin-left: 20%;
+   margin-right: 20%;
+ }
+
+#unlist {
+  font-weight: 600;
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin: 0;
+  margin-right: 10%;
+  background-color: white;
+  /*padding: 20px;*/
+}
+
+#unlist li {
+  /*padding: 15px;*/
+}
+
+#unlist li a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+#unlist li a:link, a:visited {
+  color: #FF5757;
+}
+
+
+/*.unlist li a:hover {*/
+/*  background-color: pink;*/
+/*}*/
+
+.login {
+  border: solid #FF5757 2px;
+  border-radius: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.daftar {
+  /*border: solid #B16B74 2px;*/
+  border-radius: 50px;
+  background-color: #437C90;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.daftar a {
+  color: white !important;
+}
+
+.hamburger {
+  float: right;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0%);
+  border: none;
+  color: #FF5757;
+  /*font-size: 60px;*/
+}
+.daftar:hover {
+  background-color: #589eb9;
+}
+.login:hover {
+  background-color: #FF5757;
+  color: black;
+}
+#unlist li a:hover {
+  color: #710000;
+}
+
+.hamburger:hover{
+  color: #710000;
+}
+
+.sec1 {
+  padding: 100px;
+  padding-left: 10%;
+}
+
+.sec1 img {
+  float: left;
+  border-radius: 20px;
+}
+
+.sec1 {
+
+}
+
+
+
+p {
+  line-height: 1.6;
+}
+
+@media (max-width: 1300px) {
+  .logo{
+    left: 30px;
+  }
+  #unlist {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1121px) {
+  #unlist {
+    display: flex !important;
+  }
+}
+@media (max-width: 1120px) {
+  #unlist {
+    display: none;
+    margin-top: 55px;
+    margin-left: -20px;
+    margin-right: 15px;
+    height: 490px;
+    /*padding: 0px;*/
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 10%);
+    /*z-index: -2;*/
+  }
+
+  #unlist a {
+    /*margin-top: 25px;*/
+  }
+
+  #unlist li {
+    padding: 10px;
+  }
+
+  .hamburger {
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 50px;
+    /*margin-right: 50px;*/
+    margin-top: -6px;
+    /*background-color: rgba(0, 0, 0, 0%);*/
+    /*border: none;*/
+  }
+
+  .login a {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .login {
+    margin-top: 20px;
+    padding: 3px;
+    margin-left: 15px;
+    margin-right: 40px;
+  }
+  .daftar a {
+    text-align: center;
+    margin-top: 0px;
+  }
+  .daftar {
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 3px;
+    margin-right: 40px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .homeBack h1 {
+    font-size: 30pt;
+  }
+
+  .homeBack p {
+    margin-top: 10px;
+    font-size: 10pt;
+  }
+}

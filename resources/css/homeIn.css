@@ -1,0 +1,509 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12pt;
+}
+
+.top {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  padding: 15px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 30%);
+}
+.logo{
+  position: absolute;
+  top: 22px;
+  left: 10%;
+}
+
+.homeBack {
+  /*width: 100%;*/
+  height: 700px;
+  background-image: url("/img/homeImageDark.jpg");
+  background-color: #FF5757;
+  background-repeat: no-repeat;
+  /*background-size: auto 100%;*/
+  background-size: cover;
+  background-position: center center;
+}
+
+.login {
+  display: none;
+}
+
+.homeBack div {
+  text-align: center;
+  color: white;
+}
+.homeBack h1 {
+  padding-top: 240px;
+  font-size: 50pt;
+  margin-right: 100px;
+  margin-left: 100px;
+  line-height: 1;
+}
+.homeBack p {
+  margin-top: -30px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#unlist {
+  font-weight: 600;
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin: 0;
+  margin-right: 10%;
+  background-color: white;
+  /*padding: 20px;*/
+}
+
+#unlist li {
+  /*padding: 15px;*/
+}
+
+#unlist li a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+#unlist li a:link, #unlist li a:visited {
+  color: #FF5757;
+}
+
+
+/*.unlist li a:hover {*/
+/*  background-color: pink;*/
+/*}*/
+
+.login {
+  border: solid #FF5757 2px;
+  border-radius: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.daftar {
+  /*border: solid #B16B74 2px;*/
+  border-radius: 50px;
+  background-color: #589eb9;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.daftar:hover {
+  background-color: #437C90;
+}
+
+.daftar a {
+  color: white !important;
+}
+
+.reg {
+  border-radius: 50px;
+  background-color: #589eb9;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 40px;
+  color: white;
+  border: none;
+  bottom: 0;
+  margin-top: 15px;
+}
+
+.reg:hover {
+  background-color: #437C90;
+}
+.hamburger {
+  float: right;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0%);
+  border: none;
+  color: #FF5757;
+  /*font-size: 60px;*/
+}
+
+.card {
+  float: left;
+  margin-top: 50px;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  width: 30%;
+  height: auto;
+  background-color: #ffe5e7;
+  border-radius: 15px;
+  padding: 30px;
+  /*word-wrap: break-word;*/
+  box-sizing: border-box;
+  color: #710000;
+}
+
+
+.card a:link, .card a:visited {
+  text-decoration: none;
+  color: #FF5757;
+}
+
+.card a:hover, .card a:active {
+  text-decoration: underline;
+}
+
+
+.card h1{
+  font-size: 150% !important;
+}
+
+.secText a {
+  font-size: 15pt;
+  font-weight: 600;
+}
+.secText a:link, .secText a:visited {
+  color: #FF5757;
+  text-decoration: none;
+}
+
+.secText a:hover, .secText a:active {
+  color: #710000;
+  text-decoration: none;
+}
+.login:hover {
+  background-color: #FF5757;
+  color: black;
+}
+#unlist li a:hover, a:active {
+  color: #710000;
+}
+
+.hamburger:hover{
+  color: #710000;
+}
+
+.sec {
+  padding: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow: auto;
+}
+
+.s1 {
+  overflow: auto;
+}
+.s1 img {
+  float: left;
+  margin-right: 50px;
+}
+
+.s2 {
+  background-color: #ececec;
+  overflow: auto;
+}
+
+.s2 img {
+  float: right;
+  margin-left: 50px;
+}
+
+.sec img {
+
+  border-radius: 20px;
+
+}
+
+.s4 {
+  background-color: #ececec;
+}
+
+.s4 .secText {
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.s3 {
+  overflow: hidden;
+}
+
+.sec h1 {
+  /*padding: 0;*/
+  margin-top: 0px;
+  font-size: 30pt;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #b16b75;
+  padding: 100px;
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow: auto;
+  color: white;
+}
+
+.cs {
+  /*background-color: #437C90;*/
+  float: left;
+}
+
+.contact {
+  width: 30%;
+}
+
+.peserta {
+  width: 15%;
+}
+
+.pelatihan {
+  width: 15%;
+}
+
+.pertanyaan {
+  width: 15%;
+}
+
+.cs p {
+  line-height: 2.2;
+}
+
+.cs a:link, .cs a:visited {
+  text-decoration: none;
+  color: white;
+}
+.cs a:hover, .cs a:active {
+  text-decoration: underline;
+}
+
+.footer h1 {
+  font-size: 15pt;
+  margin: 0;
+}
+.footlogo{
+  /*background-color: #710000;*/
+  width: 20%;
+  float: left;
+  /*display: flex;*/
+}
+
+.footin {
+  height: 230px;
+}
+
+.footest a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+.footest a:hover, a:active {
+  text-decoration: underline;
+}
+
+.footlogo p {
+  margin-top: 80px;
+}
+
+.footlogo i {
+  font-size: 20pt;
+  letter-spacing: 10px;
+}
+
+.sec .secText{
+  /*justify-content: right;*/
+  /*margin: 200px;*/
+  color: #710000;
+  overflow: hidden;
+}
+
+
+
+p {
+  line-height: 1.6;
+}
+
+
+@media (max-width: 1300px) {
+  .logo{
+    left: 30px;
+  }
+  #unlist {
+    margin-right: 30px;
+  }
+  /*.sec {*/
+  /*  overflow: hidden;*/
+  /*}*/
+
+  .sec img {
+    height: 250px;
+  }
+
+  .sec .secText{
+    font-size: 90%;
+
+  }
+}
+
+@media (min-width: 1121px) {
+  #unlist {
+    display: flex !important;
+  }
+}
+@media (max-width: 1120px) {
+  #unlist {
+    display: none;
+    margin-top: 55px;
+    margin-left: -20px;
+    margin-right: 15px;
+    height: 420px;
+    /*padding: 0px;*/
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 10%);
+    /*z-index: -2;*/
+  }
+  .login {
+    display: block;
+  }
+  .profilImage {
+    display: none;
+  }
+
+  #unlist a {
+    /*margin-top: 25px;*/
+  }
+
+  #unlist li {
+    padding: 10px;
+  }
+
+  .hamburger {
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 50px;
+    /*margin-right: 50px;*/
+    margin-top: -6px;
+    /*background-color: rgba(0, 0, 0, 0%);*/
+    /*border: none;*/
+  }
+
+  .login a {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .login {
+    margin-top: 20px;
+    padding: 3px;
+    margin-left: 15px;
+    margin-right: 40px;
+  }
+  .daftar a {
+    text-align: center;
+    margin-top: 0px;
+  }
+  .daftar {
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 3px;
+    margin-right: 40px;
+  }
+
+  .footer p {
+    font-size: 80%;
+  }
+  .cs h1 {
+    font-size: 90% !important;
+  }
+  .footlogo img {
+    height: 20px;
+  }
+  .footlogo i {
+    font-size: 160%;
+  }
+  .footest {
+    font-size: 80%;
+  }
+
+}
+
+@media (max-width: 850px) {
+  .homeBack h1 {
+    font-size: 30pt;
+  }
+
+  .footlogo img {
+    height: 30px;
+  }
+
+  .homeBack p {
+    margin-top: 10px;
+    font-size: 10pt;
+  }
+
+  .sec img {
+    display: none;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .footlogo {
+    width: 100%;
+    height: 80px;
+  }
+  .footlogo i {
+    display: inline;
+    float: right;
+    margin-top: 0;
+  }
+
+  .footlogo p {
+    display: none;
+  }
+
+  .contact {
+    width: 60%;
+    /*background-color: #437C90;*/
+  }
+  .peserta {
+    width: 40%;
+  }
+  .pelatihan {
+    width: 60%;
+    margin-top: 30px;
+  }
+  .pertanyaan {
+    width: 40%;
+    margin-top: 30px;
+  }
+
+  .footin {
+    height: 460px;
+    /*display: flex;*/
+  }
+
+
+}
+
+@media (max-width: 460px) {
+  .homeBack h1 {
+    font-size: 30pt !important;
+    /*color: #589eb9;*/
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .s4 .secText {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+}

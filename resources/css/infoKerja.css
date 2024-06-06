@@ -1,0 +1,485 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12pt;
+}
+
+.top {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  padding: 15px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 30%);
+}
+.logo{
+  position: absolute;
+  top: 22px;
+  left: 10%;
+}
+
+.homeBack {
+  /*width: 100%;*/
+  height: 500px;
+  background-image: url("/img/noka.jpg");
+  background-color: #FF5757;
+  background-repeat: no-repeat;
+  /*background-size: auto 100%;*/
+  background-size: cover;
+  background-position: center center;
+}
+
+.homeBack div {
+  text-align: center;
+  color: white;
+}
+.homeBack h1 {
+  /*padding-top: 200px;*/
+  font-size: 50pt;
+  margin-right: 100px;
+  margin-left: 100px;
+  line-height: 1;
+  margin-top: -15px;
+}
+.homeBack p {
+  /*margin-top: -30px;*/
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.homeBack img {
+  padding-top: 180px;
+  height: 80px;
+}
+
+#unlist {
+  font-weight: 600;
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin: 0;
+  margin-right: 10%;
+  background-color: white;
+  /*padding: 20px;*/
+}
+
+#unlist li {
+  /*padding: 15px;*/
+}
+
+#unlist li a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+#unlist li a:link, #unlist a:visited {
+  color: #FF5757;
+}
+
+
+/*.unlist li a:hover {*/
+/*  background-color: pink;*/
+/*}*/
+
+.login {
+  border: solid #FF5757 2px;
+  border-radius: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.daftar {
+  /*border: solid #B16B74 2px;*/
+  border-radius: 50px;
+  background-color: #589eb9;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.daftar a {
+  color: white !important;
+}
+
+.hamburger {
+  float: right;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0%);
+  border: none;
+  color: #FF5757;
+  /*font-size: 60px;*/
+}
+.daftar:hover {
+  background-color: #437C90;
+}
+.login:hover {
+  background-color: #FF5757;
+  color: black;
+}
+#unlist li a:hover {
+  color: #710000;
+}
+
+.hamburger:hover{
+  color: #710000;
+}
+
+.sec1 {
+  padding: 100px;
+  padding-left: 10%;
+}
+
+.sec1 img {
+  float: left;
+  border-radius: 20px;
+}
+
+.sec1 {
+
+}
+
+p {
+  line-height: 1.6;
+}
+.cardSec li {
+  line-height: 1.6;
+}
+
+.infoSec {
+  /*background-color: #FF5757;*/
+  padding-top: 50px;
+  height: auto;
+  padding-inline: 10%;
+  display: flex;
+  /*flex-direction: column;*/
+}
+
+.infoSec h1 {
+  color: #710000;
+}
+
+.infoSec h3 {
+  color: #FF5757;
+}
+
+.leftCard {
+  width: 70%;
+  /*background-color: #b16b75;*/
+  padding: 20px;
+}
+
+.rightCard {
+  width: 30%;
+  /*background-color: #555555;*/
+  padding: 20px;
+}
+
+.apply {
+  display: flex;
+  background-color: #FF5757;
+  margin-bottom: 20px;
+  color: white;
+  height: 60px;
+  /*text-align: center;*/
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 15px;
+}
+.apply:hover {
+  background-color: #710000;
+}
+
+.jobInfo {
+  background-color: white;
+  line-height: 1.6;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 10%);
+}
+
+.jobInfo i:not(:first-child) {
+  margin-top: 20px;
+}
+
+.infoPerusahaan {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 10%);
+}
+
+.infoPerusahaan li {
+  line-height: 1.6;
+}
+
+.infoCard {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 10%);
+}
+
+.infoCard li {
+  line-height: 1.6;
+}
+
+.footer {
+  margin-top: 70px;
+  background-color: #b16b75;
+  padding: 100px;
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow: auto;
+  color: white;
+}
+
+.cs {
+  /*background-color: #437C90;*/
+  float: left;
+}
+
+.contact {
+  width: 30%;
+}
+
+.peserta {
+  width: 15%;
+}
+
+.pelatihan {
+  width: 15%;
+}
+
+.pertanyaan {
+  width: 15%;
+}
+
+.cs p {
+  line-height: 2.2;
+}
+
+.cs a:link, .cs a:visited {
+  text-decoration: none;
+  color: white;
+}
+.cs a:hover, .cs a:active {
+  text-decoration: underline;
+}
+
+.footer h1 {
+  font-size: 15pt;
+  margin: 0;
+}
+.footlogo{
+  /*background-color: #710000;*/
+  width: 20%;
+  float: left;
+  /*display: flex;*/
+}
+
+.footin {
+  height: 230px;
+}
+
+.footest a:link, .footest a:visited {
+  color: white;
+  text-decoration: none;
+}
+.footest a:hover, .footest a:active {
+  text-decoration: underline;
+}
+
+.footlogo p {
+  margin-top: 80px;
+}
+
+.footlogo i {
+  font-size: 20pt;
+  letter-spacing: 10px;
+}
+
+@media (max-width: 1120px) {
+  .footer p {
+    font-size: 80%;
+  }
+  .cs h1 {
+    font-size: 90% !important;
+  }
+  .footlogo img {
+    height: 20px;
+  }
+  .footlogo i {
+    font-size: 160%;
+  }
+  .footest {
+    font-size: 80%;
+  }
+
+}
+
+@media (max-width: 850px) {
+
+  .footlogo img {
+    height: 30px;
+  }
+
+  .footlogo {
+    width: 100%;
+    height: 80px;
+  }
+  .footlogo i {
+    display: inline;
+    float: right;
+    margin-top: 0;
+  }
+
+  .footlogo p {
+    display: none;
+  }
+
+  .contact {
+    width: 60%;
+    /*background-color: #437C90;*/
+  }
+  .peserta {
+    width: 40%;
+  }
+  .pelatihan {
+    width: 60%;
+    margin-top: 30px;
+  }
+  .pertanyaan {
+    width: 40%;
+    margin-top: 30px;
+  }
+
+  .footin {
+    height: 460px;
+    /*display: flex;*/
+  }
+
+
+}
+
+@media (max-width: 1300px) {
+  .logo{
+    left: 30px;
+  }
+  #unlist {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 850px) {
+  .homeBack h1 {
+    font-size: 30pt;
+  }
+
+  .homeBack p {
+    margin-top: 10px;
+    font-size: 10pt;
+  }
+}
+
+@media (min-width: 1121px) {
+  #unlist {
+    display: flex !important;
+  }
+}
+@media (max-width: 1120px) {
+
+  .infoSec {
+    /*background-color: #710000;*/
+    flex-direction: column-reverse;
+  }
+  .leftCard {
+    width: 100%;
+  }
+  .rightCard {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .rightCard {
+    padding: 0;
+  }
+  .leftCard {
+    padding: 0;
+    padding-top: 20px;
+  }
+  .apply {
+  }
+
+  #unlist {
+    display: none;
+    margin-top: 55px;
+    margin-left: -20px;
+    margin-right: 15px;
+    height: 490px;
+    /*padding: 0px;*/
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 10%);
+    /*z-index: -2;*/
+  }
+
+  #unlist a {
+    /*margin-top: 25px;*/
+  }
+
+  #unlist li {
+    padding: 10px;
+  }
+
+  .hamburger {
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 50px;
+    /*margin-right: 50px;*/
+    margin-top: -6px;
+    /*background-color: rgba(0, 0, 0, 0%);*/
+    /*border: none;*/
+  }
+
+  .login a {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .login {
+    margin-top: 20px;
+    padding: 3px;
+    margin-left: 15px;
+    margin-right: 40px;
+  }
+  .daftar a {
+    text-align: center;
+    margin-top: 0px;
+  }
+  .daftar {
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 3px;
+    margin-right: 40px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .homeBack h1 {
+    font-size: 30pt;
+  }
+
+  .homeBack p {
+    margin-top: 10px;
+    font-size: 10pt;
+  }
+}
