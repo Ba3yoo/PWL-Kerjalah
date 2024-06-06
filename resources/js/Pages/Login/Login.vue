@@ -9,7 +9,9 @@
 
 </style>
 <template>
-    <body>
+    <div class="outer-container">
+
+
     <div class="container">
         <h1>Masuk Akun</h1>
         <p id="txt2">Buat kamu yang sudah terdaftar, silakan masuk ke akunmu.</p>
@@ -21,17 +23,22 @@
             <label for="password"></label>
             <input type="password" placeholder="Password" id="password" name="password" required>
 
+            <input id="login" type="submit" value="Login"  class="login-btn" onclick="redirectToPage()">
+
 
         </form>
+
         <a style="text-decoration:none" id="lupa" href="https://google.com"> Lupa password? </a>
         <input type="checkbox" id="ingat" name="ingat" value="ingat">
         <label for="ingat" id="ingat"> Ingat saya</label>
         <hr>
+
         <p>Belum punya akun? <a style="text-decoration:none" id="daftar" href="register.html"> Daftarkan dirimu
         </a></p>
 
     </div>
-    </body>
+    </div>
+
 </template>
 
 <style scoped>
