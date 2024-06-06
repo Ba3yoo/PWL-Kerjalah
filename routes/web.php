@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PokeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -35,6 +36,9 @@ Route::controller(PokeController::class)->prefix('/poke')->group(function () {
 
 Route::get('/poke', [PokeController::class, 'index'])
     ->name('poke.index');
+
+Route::get('/login', [LoginController::class, 'login'])
+    ->name('home.login');
 
 //Route::get('/', [DashboardController::class, 'index'])
 //    ->name('dashboard.index');

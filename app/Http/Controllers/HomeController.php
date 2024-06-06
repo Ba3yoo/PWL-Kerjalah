@@ -11,4 +11,11 @@ class HomeController extends Controller
     {
         return Inertia::render('Home/Index');
     }
+
+    public function login(): Response
+    {
+        return Inertia::render('Login/Login');
+    }
+
+
 }

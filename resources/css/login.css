@@ -1,0 +1,117 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12pt;
+  background-image: url("/homeImageRed.png");
+  background-size: cover;
+}
+
+p {
+color: #710000;
+font-family: "Work Sans", sans-serif;
+font-size: 12pt;
+line-height: 1.6;
+}
+#login{
+  font-size: 15pt;
+  font-family: "Work Sans", sans-serif;
+
+  color: white;
+}
+#txt{
+  font-size: 9pt;
+  font-family: "Work Sans", sans-serif;
+
+  color: #b16b74;
+}
+#txt2{
+  font-size: 18px;
+}
+
+
+#daftar {
+  color: #589eb9;
+}
+
+#daftar:hover {
+
+  color: #437C90;
+
+}
+
+#lupa {
+
+  float: right;
+  color: #589eb9;
+}
+
+#lupa:hover {
+  float: right;
+  text-decoration: underline;
+  color: #437C90;
+
+}
+#ingat{
+  color:#710000;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 400px;
+  height: 650px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  margin-top: 6%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  font-family: "Work Sans", sans-serif;
+
+  color: #710000;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.container input[type="email"],
+.container input[type="password"] {
+  width: 380px;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #589eb9;
+  border-radius: 5px;
+}
+
+.container input[type="email"]:hover,
+.container input[type="password"]:hover {
+
+  border: 3px solid #437C90;
+  border-radius: 5px;
+}
+
+.container .g-recaptcha {
+  margin-bottom: 15px;
+}
+
+.container input[type="submit"] {
+  margin-bottom: 20px;
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  background-color: #589eb9 ;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.container input[type="submit"]:hover {
+  background-color: #437C90;
+}

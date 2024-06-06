@@ -2,9 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Inertia\Inertia;
+use Inertia\Response;
 
-class LoginController.php extends Controller
+class LoginController extends Controller
 {
-    //
+
+    public function login(): Response
+    {
+        return Inertia::render('Login/Login');
+    }
+
+
 }
