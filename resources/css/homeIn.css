@@ -29,7 +29,7 @@ body {
   background-position: center center;
 }
 
-.login {
+.profil {
   display: none;
 }
 
@@ -83,7 +83,7 @@ body {
 /*  background-color: pink;*/
 /*}*/
 
-.login {
+.profil {
   border: solid #FF5757 2px;
   border-radius: 50px;
   padding-right: 10px;
@@ -177,7 +177,7 @@ body {
   color: #710000;
   text-decoration: none;
 }
-.login:hover {
+.profil:hover {
   background-color: #FF5757;
   color: black;
 }
@@ -367,7 +367,7 @@ p {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 10%);
     /*z-index: -2;*/
   }
-  .login {
+  .profil {
     display: block;
   }
   .profilImage {
@@ -393,12 +393,12 @@ p {
     /*border: none;*/
   }
 
-  .login a {
+  .profil a {
     margin-top: 0;
     text-align: center;
   }
 
-  .login {
+  .profil {
     margin-top: 20px;
     padding: 3px;
     margin-left: 15px;

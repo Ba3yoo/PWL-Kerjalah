@@ -4,6 +4,17 @@
 import Navbar from "@/Shared/Navbar.vue";
 import Footer from "@/Shared/Footer.vue";
 
+import {ref, onMounted} from "vue"
+const logged = ref(false)
+
+if (getSessionEmail() !== "") {
+    logged.value = true;
+}
+
+function regs() {
+    window.location.href = "/register";
+}
+
 </script>
 
 <style scoped>
@@ -23,7 +34,7 @@ import Footer from "@/Shared/Footer.vue";
     <div class="homeBack" style="background-image: url('/homeImageDark.jpg')">
         <div>
             <h1>Kesempatan setara<br>untuk&nbsp;semua</h1>
-            <p>Temukan peluang kerja yang mendukung inklusi di KerjaKita,
+            <p>Temukan peluang kerja yang mendukung inklusi di Kerjalah,
                 situs web yang memberikan aksesibilitas bagi semua individu untuk meraih kesuksesan karier.</p>
         </div>
 
@@ -34,7 +45,7 @@ import Footer from "@/Shared/Footer.vue";
         <img src="/gambarHome1.jpg" alt="Orang" height="300px">
         <div class="secText">
             <h1>Semua bisa bekerja!</h1>
-            <p>KerjaKita menyediakan website inovatif dengan fitur ramah disabilitas. Temukan peluang karir yang sesuai dengan minat, keterampilan, dan kebutuhan Anda. Bersama-sama, wujudkan lingkungan kerja inklusif di mana setiap orang memiliki kesempatan yang setara. Bergabunglah dengan kami dan jadilah bagian dari perubahan yang luar biasa ini!</p>
+            <p>Kerjalah menyediakan website inovatif dengan fitur ramah disabilitas. Temukan peluang karir yang sesuai dengan minat, keterampilan, dan kebutuhan Anda. Bersama-sama, wujudkan lingkungan kerja inklusif di mana setiap orang memiliki kesempatan yang setara. Bergabunglah dengan kami dan jadilah bagian dari perubahan yang luar biasa ini!</p>
             <button class="reg" onclick="redirectToPage()" style="cursor: pointer">Daftar Sekarang</button>
         </div>
     </div>
@@ -43,7 +54,7 @@ import Footer from "@/Shared/Footer.vue";
         <img src="/gambarHome2.jpg" alt="Skill" height="300px">
         <div class="secText">
             <h1>Tingkatkan skill anda</h1>
-            <p>Perbarui dan tingkatkan keterampilan Anda dengan menggunakan KerjaKita. Temukan berbagai kursus online interaktif dan materi pembelajaran yang tersedia. Latih kemampuan Anda secara praktis dan relevan dengan dunia kerja yang kompetitif. KerjaKita menyediakan peluang bagi Anda untuk mengasah keterampilan Anda melalui pengalaman langsung. Bergabunglah sekarang dan jadilah versi terbaik dari diri Anda dalam mencapai kesuksesan karir!</p>
+            <p>Perbarui dan tingkatkan keterampilan Anda dengan menggunakan Kerjalah. Temukan berbagai kursus online interaktif dan materi pembelajaran yang tersedia. Latih kemampuan Anda secara praktis dan relevan dengan dunia kerja yang kompetitif. Kerjalah menyediakan peluang bagi Anda untuk mengasah keterampilan Anda melalui pengalaman langsung. Bergabunglah sekarang dan jadilah versi terbaik dari diri Anda dalam mencapai kesuksesan karir!</p>
             <a href="Pelatihan.html">TELUSURI</a>
         </div>
     </div>
@@ -56,20 +67,21 @@ import Footer from "@/Shared/Footer.vue";
         </div>
         <div class="card">
             <h1>Tujuan</h1>
-            <p>KerjaKita berusaha menciptakan kesempatan kerja inklusif dan pelatihan kerja bagi semua individu, termasuk mereka dengan disabilitas. Dengan fitur-fitur yang ramah disabilitas, KerjaKita berusaha untuk membantu menciptakan peluang karir yang setara bagi semua orang.</p>
+            <p>Kerjalah berusaha menciptakan kesempatan kerja inklusif dan pelatihan kerja bagi semua individu, termasuk mereka dengan disabilitas. Dengan fitur-fitur yang ramah disabilitas, Kerjalah berusaha untuk membantu menciptakan peluang karir yang setara bagi semua orang.</p>
         </div>
         <div class="card">
             <h1>Tim Pengembang</h1>
-            <p>KerjaKita dikembangkan oleh tim pengembang dari Universitas Brawijaya Fakultas Ilmu Komputer yang beranggotakan Halilintar Daiva, Muhammad Andra, Urdha Egha, Mohammad 'Alwan, Bayusatya Mufti. Untuk melaporkan permasalahan terkait website,
+            <p>Kerjalah dikembangkan oleh tim pengembang dari Universitas Brawijaya Fakultas Ilmu Komputer yang beranggotakan Halilintar Daiva, Muhammad Andra, Urdha Egha, Mohammad 'Alwan, Bayusatya Mufti. Untuk melaporkan permasalahan terkait website,
                 <a href="HubungiKami.html#support">hubungi tim pengembang</a></p>
         </div>
     </div>
 
-    <div class="sec s4">
+    <div class="sec s4" v-if="!logged">
         <div class="secText">
             <h1>Daftarkan dirimu Sekarang!</h1>
-            <p>Bergabung bersama perusahaan-perusahaan yang telah terdaftar di KerjaKita dan dapatkan berbagai macam pelatihan untuk meningkatkan skill anda!</p>
-            <button class="reg" onclick="redirectToPage()" style="cursor: pointer">Daftar Sekarang</button>
+            <p>Bergabung bersama perusahaan-perusahaan yang telah terdaftar di Kerjalah dan dapatkan berbagai macam pelatihan untuk meningkatkan skill anda!</p>
+            <button class="reg" @click="regs" style="cursor: pointer">Daftar Sekarang</button>
+
         </div>
     </div>
 

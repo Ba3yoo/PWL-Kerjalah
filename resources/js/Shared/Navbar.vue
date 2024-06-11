@@ -1,5 +1,23 @@
 <script setup>
 import {Link} from '@inertiajs/vue3'
+
+import {ref, onMounted} from "vue"
+const logged = ref(false)
+
+if (getSessionEmail() !== "") {
+    logged.value = true;
+}
+function expand(){
+    if(document.getElementById("unlist").style.display == "none" || document.getElementById("unlist").style.display == "") {
+        document.getElementById("unlist").style.display = "block";
+    } else {
+        document.getElementById("unlist").style.display = "none";
+    }
+}
+function redirectToPage() {
+    window.location.href = "profil.html";
+}
+
 </script>
 
 <style scoped>
@@ -8,6 +26,7 @@ import {Link} from '@inertiajs/vue3'
 
 @import '/resources/css/normalize.css';
 @import '/resources/css/main.css';
+@import '/resources/css/homeIn.css';
 
 </style>
 
@@ -21,11 +40,16 @@ import {Link} from '@inertiajs/vue3'
                 <li><a href="artikel.html">Artikel</a></li>
                 <li><a href="#aboutUs">Tentang Kami</a></li>
                 <li><a href="HubungiKami.html">Tanya Jawab</a></li>
-                <li class="login"><a href="/login">Login</a></li>
-                <li class="daftar"><a href="register.html">Daftar Sekarang</a></li>
+                <li class="login" v-if="!logged"><a href="/login">Login</a></li>
+                <li class="daftar" v-if="!logged"><a href="/register">Daftar Sekarang</a></li>
+                <li class="profilImage" v-if="logged"><a href="/profil"><img src="/profile.png" alt="profile" width="35px" style="margin-top: -10px"></a></li>
+                <li class="profil" v-if="logged"><a href="profil.html">Profil</a></li>
             </ul>
-            <button class="hamburger" onclick="expand()"><span class="material-symbols-outlined">menu</span></button>
+            <button onclick="shout()">ada</button>
+            <a href="/logout">dada</a>
+            <button class="hamburger" @click="expand"><span class="material-symbols-outlined">menu</span></button>
         </nav>
+
     </div>
 </template>
 

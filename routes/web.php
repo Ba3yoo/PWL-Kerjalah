@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\BiodataController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PokeController;
+use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -40,8 +42,39 @@ Route::get('/poke', [PokeController::class, 'index'])
 Route::get('/login', [LoginController::class, 'login'])
     ->name('home.login');
 
-//Route::get('/', [DashboardController::class, 'index'])
-//    ->name('dashboard.index');
+Route::get('/register', [LoginController::class, 'register'])
+    ->name('home.register');
+
+Route::get('/biodata', [LoginController::class, 'biodata'])
+    ->name('home.biodata');
+
+//Route::get('/', [ProfilController::class, 'index'])
+//    ->name('profil.index');
 
 Route::get('/', [HomeController::class, 'index'])
     ->name('home.index');
+
+Route::post('/register/new', [UserController::class, 'store'])
+    ->name('user.store');
+
+Route::post('/biodata/new', [BiodataController::class, 'store'])
+    ->name('biodata.store');
+
+Route::post('/login/auth', [UserController::class, 'auth'])
+    ->name('user.auth');
+
+
+Route::get('/logout', [UserController::class, 'logout'])
+    ->name('user.logout');
+
+Route::get('/profil', [ProfilController::class, 'index'])
+    ->name('profil.index');
+
+Route::get('/profil/biodata', [ProfilController::class, 'biodata'])
+    ->name('profil.biodata');
+
+Route::post('/profil/biodata/update', [ProfilController::class, 'updateBiodata'])
+    ->name('profil.updateBiodata');
+
+
+

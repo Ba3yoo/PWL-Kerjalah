@@ -13,3 +13,11 @@ createInertiaApp({
         .mount(el)
     },
   })
+Vue.component('login-component', require('./Pages/Login/Login.vue').default);
+
+new Vue({
+    el: '#app',
+    data: {
+        user: userData
+    }
+});

@@ -13,5 +13,11 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
+        '/register/new',
+        '/login/auth',
+        '/biodata/new',
+        '/biodata',
+        '/profil/biodata/update',
     ];
+
 }

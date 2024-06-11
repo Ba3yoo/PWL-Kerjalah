@@ -23,7 +23,7 @@ project
     ├── js/
     │   ├── Pages/
     │   │   └── Dashboard/
-    │   │       └── Index.vue (Changed)
+    │   │       └── Login.vue (Changed)
     │   └── Shared/
     │       └── Layout.vue (Changed)
     └── views/

@@ -24,7 +24,7 @@
 
             <div class="cs contact">
                 <h1>Layanan Contact Center</h1>
-                <p>081234567890 <br>kerjakita.dev@gmail.com <br> <a href="HubungiKami.html#support">Customer Support</a></p>
+                <p>081234567890 <br>developer@kerjalah.com <br> <a href="HubungiKami.html#support">Customer Support</a></p>
                 <p>Jam operasional: 08.00 - 17.00</p>
             </div>
 
@@ -46,7 +46,7 @@
 
         <div class="footest">
             <hr>
-            <span>© KerjaKita 2023</span>
+            <span>© Kerjalah 2024</span>
             <span style="float: right"><a href="#">Kebijakan</a></span>
         </div>
 
