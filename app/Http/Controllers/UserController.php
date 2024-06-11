@@ -67,7 +67,7 @@ class UserController extends Controller {
 
         } else {
             Session::put('email', $request->email);
-            Session::put('user_id', $userData->id_user);
+            Session::put('user_id', $userData->id);
 
             return redirect(route('home.index'));
 

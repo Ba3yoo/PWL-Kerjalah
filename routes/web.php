@@ -76,5 +76,17 @@ Route::get('/profil/biodata', [ProfilController::class, 'biodata'])
 Route::post('/profil/biodata/update', [ProfilController::class, 'updateBiodata'])
     ->name('profil.updateBiodata');
 
+Route::post('/profil/store-pekerjaan', [ProfilController::class, 'storeRiwayatPekerjaan'])
+    ->name('profil.storeRiwayatPekerjaan');
+
+Route::post('/profil/riwayat-pendidikan/new', [ProfilController::class, 'storeRiwayatPendidikan'])
+    ->name('profil.storeRiwayatPendidikan');
+
+Route::get('/profil/riwayat-pekerjaan', [ProfilController::class, 'riwayatPekerjaan'])
+    ->name('profil.riwayatPekerjaan');
+
+Route::get('/profil/riwayat-pendidikan', [ProfilController::class, 'riwayatPendidikan'])
+    ->name('profil.riweayatPendidikan');
+
 
 

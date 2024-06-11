@@ -12,7 +12,9 @@ import Footer from "@/Shared/Footer.vue";
 export default {
     props: {
         biodata: Object,
-        email: String
+        email: String,
+        riwayatPekerjaan: Array,
+        riwayatPendidikan: Array,
     },
     mounted() {
         console.log(this.biodata);
@@ -82,34 +84,20 @@ export default {
 
 
             <div class="accordion">
-                <a href="RiwayatPekerjaan.html"><img style="width: 20px; height: 20px; float:right"
-                                                     src="/pen_square_icon_159935.png" alt="logo">
+                <a href="/profil/riwayat-pekerjaan"><img style="width: 20px; height: 20px; float:right; rotate: 45deg"
+                                                         src="/pngwing.com (1).png" alt="logo">
                 </a>
                 Riwayat Pekerjaan
             </div>
             <div class="accordion-content">
                 <div style="margin-bottom: 10px;">
                     <div style="float:left;margin-top: 10px; margin-bottom: 10px;">
-                        <div style="margin-bottom: 10px;">
-                            November 2016 - Maret 2017
+                        <div style="margin-bottom: 10px;" v-for="pekerjaan in riwayatPekerjaan" :key="pekerjaan.id_riwayat_pekerjaan">
+                            {{pekerjaan.tanggal_mulai}} - {{pekerjaan.tanggal_selesai}}
                             <br>
-                            <b>Asisten Dosen</b>
+                            <b>{{pekerjaan.jabatan}}</b>
                             <br>
-                            Universistas Brawijaya
-                        </div>
-                        <div style="margin-bottom: 10px;">
-                            Juni 2017 - Januari 2019
-                            <br>
-                            <b>Pengembang E-Learning</b>
-                            <br>
-                            Stockholm Education Solutions
-                        </div>
-                        <div style="margin-bottom: 10px;">
-                            Februari 2019 - April 2023
-                            <br>
-                            <b>Konsultan Teknologi Pendidikan</b>
-                            <br>
-                            Bermuda Educational Services
+                            {{pekerjaan.nama_perusahaan}}
                         </div>
 
                     </div>
@@ -121,29 +109,22 @@ export default {
 
         <div class="accordion-wrapper2">
             <div class="accordion">
-                <a href="RiwayatPendidikan.html"><img style="width: 20px; height: 20px; float:right"
-                                                      src="/pen_square_icon_159935.png" alt="logo">
+                <a href="/profil/riwayat-pendidikan"><img style="width: 20px; height: 20px; float:right; rotate: 45deg"
+                                                      src="/pngwing.com (1).png" alt="logo">
                 </a>
-                Riwayat Pendidikan & Pelatihan
+                Riwayat Pendidikan
             </div>
             <div class="accordion-content">
                 <div style="margin-bottom: 10px;">
                     <div style="float:left;margin-top: 10px; margin-bottom: 10px;">
-                        <div style="margin-bottom: 10px;">
-                            Pendidikan tertinggi
+                        <div style="margin-bottom: 10px;"  v-for="pendidikan in riwayatPendidikan" :key="pendidikan.id_riwayat_pendidikan">
+                            {{pendidikan.jenjang_pendidikan}}
                             <br>
-                            <b>S1-Pendidikan Teknologi informasi</b>
+                            <b>{{pendidikan.nama_instansi}}</b>
                             <br>
-                            Universistas Brawijaya
+                            Lulus pada {{pendidikan.tanggal_lulus}}
                         </div>
 
-                        <div style="margin-bottom: 10px;">
-                            Pelatihan
-                            <br>
-                            <b>"Mengintegrasikan Teknologi Informasi dalam Proses Pembelajaran"</b>
-                            <br>
-                            Gedung Kreativitas Mahasiswa
-                        </div>
                     </div>
                 </div>
 

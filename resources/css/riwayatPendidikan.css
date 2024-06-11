@@ -1,0 +1,132 @@
+.outer-container {
+    font-family: "Work Sans", sans-serif;
+    font-size: 12pt;
+    background-image: url("/homeImageRed.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container1 {
+    width: 410px;
+    height: 200px;
+    margin: 0;
+    padding: 20px;
+    margin-top: 0px;
+    border: 1px solid #589eb9;
+    border-radius: 5px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container label,
+.container input,
+.container select {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container input,
+.container select {
+    width:440px;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #589eb9;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #589eb9;
+    border-radius: 5px;
+}
+
+.container input:hover,
+.container select:hover {
+
+    border: 2px solid #437C90;
+    border-radius: 5px;
+}
+
+.container .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container .form-row .half-input {
+    flex-basis: 45%;
+}
+
+.container .form-row .full-input {
+    flex-basis: 100%;
+}
+
+.container .form-row .quarter-input {
+    flex-basis: 22.5%;
+}
+
+.container input[type="submit"] {
+    width: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#login {
+    font-size: 15pt;
+    font-family: "Work Sans", sans-serif;
+
+    color: white;
+}
+
+.container input[type="login"],
+.container input[type="password"]
+.container input[type="select"] {
+    width: 380px;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #589eb9;
+    border-radius: 5px;
+}
+
+.container input[type="login"]:hover,
+.container input[type="password"]:hover {
+
+    border: 3px solid #437C90;
+    border-radius: 5px;
+}
+
+.container input[type="submit"] {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    background-color: #589eb9;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 100px;
+    margin-left: 300px;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #437C90;
+}
+

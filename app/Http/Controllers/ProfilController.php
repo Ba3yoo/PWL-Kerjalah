@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Biodata;
+use App\Models\RiwayatPekerjaan;
+use App\Models\RiwayatPendidikan;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -14,7 +16,12 @@ class ProfilController extends Controller
         $user_id = session('user_id');
         $email = session('email');
         $biodata = Biodata::where('user_id', $user_id)->first();
-        return Inertia::render('Profil/Index', ['biodata' => $biodata, 'email' => $email]);
+        $riwayatPekerjaan = RiwayatPekerjaan::where('user_id', $user_id)->get();
+        $riwayatPendidikan = RiwayatPendidikan::where('user_id', $user_id)->get();
+
+
+        return Inertia::render('Profil/Index', ['biodata' => $biodata, 'email' => $email,
+            'riwayatPekerjaan' => $riwayatPekerjaan, 'riwayatPendidikan' => $riwayatPendidikan]);
     }
 
     public function biodata()
@@ -42,5 +49,54 @@ class ProfilController extends Controller
         $biodata->update($data);
 
         return redirect(route('profil.index'));
+    }
+    public function riwayatPekerjaan()
+    {
+        $user_id = session('user_id');
+        $email = session('email');
+        $biodata = Biodata::where('user_id', $user_id)->first();
+        return Inertia::render('Profil/RiwayatPekerjaan', ['biodata' => $biodata, 'email' => $email]);
+    }
+
+    public function storeRiwayatPekerjaan(Request $request)
+    {
+        $data = $request->validate([
+            'nama_perusahaan' => 'required',
+            'user_id' => 'required',
+            'jabatan' => 'required',
+            'tanggal_mulai' => 'required',
+            'tanggal_selesai' => 'required',
+            'lokasi_pekerjaan' => 'required',
+        ]);
+
+        $user_id = session('user_id');
+        $newRiwayatPekerjaan = RiwayatPekerjaan::create($data);
+
+        return redirect(route('profil.index'));
+
+    }
+
+    public function riwayatPendidikan()
+    {
+        $user_id = session('user_id');
+        $email = session('email');
+        $biodata = Biodata::where('user_id', $user_id)->first();
+        return Inertia::render('Profil/RiwayatPendidikan', ['biodata' => $biodata, 'email' => $email]);
+    }
+
+    public function storeRiwayatPendidikan(Request $request)
+    {
+        $data = $request->validate([
+            'nama_instansi' => 'required',
+            'user_id' => 'required',
+            'tanggal_lulus' => 'required',
+            'jenjang_pendidikan' => 'required',
+        ]);
+
+        $user_id = session('user_id');
+        $newRiwayatPekerjaan = RiwayatPendidikan::create($data);
+
+        return redirect(route('profil.index'));
+
     }
 }

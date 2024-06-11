@@ -33,7 +33,7 @@ function redirectToPage() {
 <template>
     <div class="top">
         <nav>
-            <a href="index.html"><img class="logo" src="/logo.png" alt="logo" height="30px"></a>
+            <a href="/"><img class="logo" src="/logo.png" alt="logo" height="30px"></a>
             <ul id="unlist">
                 <li><a class="lowongan" href="Cari_Lowongan.html">Cari Lowongan</a></li>
                 <li><a href="Pelatihan.html">Pelatihan</a></li>
