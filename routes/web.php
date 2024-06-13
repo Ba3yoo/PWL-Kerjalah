@@ -65,6 +65,7 @@ Route::get('/detail',[DetailController::class,'index'])
 Route::get('/search/{keyword}', [SearchController::class, 'search']);
 
 Route::get('/detail/{idLowongan}', [DetailController::class, 'detail']);
+
 Route::post('/register/new', [UserController::class, 'store'])
     ->name('user.store');
 
