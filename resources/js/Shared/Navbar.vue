@@ -36,12 +36,12 @@ function redirectToPage() {
             <a href="/"><img class="logo" src="/logo.png" alt="logo" height="30px"></a>
             <ul id="unlist">
                 <li><a class="lowongan" href="/search">Cari Lowongan</a></li>
-                <li><a href="Pelatihan.html">Pelatihan</a></li>
-                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="/artikel">Artikel</a></li>
                 <li><a href="#aboutUs">Tentang Kami</a></li>
                 <li><a href="HubungiKami.html">Tanya Jawab</a></li>
                 <li class="login" v-if="!logged"><a href="/login">Login</a></li>
                 <li class="daftar" v-if="!logged"><a href="/register">Daftar Sekarang</a></li>
+                <li class="login" v-if="logged"><a href="/logout">Logout</a></li>
                 <li class="profilImage" v-if="logged"><a href="/profil"><img src="/profile.png" alt="profile" width="35px" style="margin-top: -10px"></a></li>
                 <li class="profil" v-if="logged"><a href="profil.html">Profil</a></li>
             </ul>

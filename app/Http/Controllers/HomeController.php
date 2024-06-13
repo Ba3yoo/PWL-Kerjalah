@@ -17,5 +17,10 @@ class HomeController extends Controller
         return Inertia::render('Login/Login');
     }
 
+    public function artikel(): Response
+    {
+        return Inertia::render('Artikel/Index');
+    }
+
 
 }

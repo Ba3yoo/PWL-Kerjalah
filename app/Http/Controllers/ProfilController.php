@@ -94,7 +94,7 @@ class ProfilController extends Controller
         ]);
 
         $user_id = session('user_id');
-        $newRiwayatPekerjaan = RiwayatPendidikan::create($data);
+        $newRiwayatPendidikan = RiwayatPendidikan::create($data);
 
         return redirect(route('profil.index'));
 

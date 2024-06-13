@@ -175,22 +175,6 @@ export default {
 
             </div>
 
-            <div class="accordion">
-                <a href="CV.html"><img style="width: 20px; height: 20px; float:right" src="/pen_square_icon_159935.png"
-                                       alt="logo">
-                </a>
-                Curriculum Vitae
-            </div>
-            <div class="accordion-content">
-
-                <div class="box">
-                    <div style="margin-top: 5px;">Resume</div>
-                </div>
-                <div class="box2">
-                    <div style="margin-top: 5px;">Kirim CV</div>
-                </div>
-
-            </div>
 
         </div>
     </div>

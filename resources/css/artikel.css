@@ -5,7 +5,7 @@ body {
 }
 
 .bodyBack {
-  background-image: url("/img/homeImageRed.png");
+  background-image: url("/homeImageRed.png");
 
   background-position: top;
   background-size: cover;
