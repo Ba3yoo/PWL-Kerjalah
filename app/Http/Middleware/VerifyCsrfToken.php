@@ -20,6 +20,7 @@ class VerifyCsrfToken extends Middleware
         '/profil/biodata/update',
         '/profil/store-pekerjaan',
         '/profil/riwayat-pendidikan/new',
+        '/apply/store-application'
     ];
 
 }

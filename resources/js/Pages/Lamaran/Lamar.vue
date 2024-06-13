@@ -28,8 +28,8 @@ export default {
 
         <form action="../apply/store-application" method="post">
             <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-            <input type="hidden" name="user_id" value="user_id">
-            <input type="hidden" name="id_lowongan" value=lowongan.id_lowongan>
+            <input type="hidden" name="user_id" :value="user_id">
+            <input type="hidden" name="id_lowongan" :value="lowongan.id_lowongan">
 
             <label for="isi-surat">Surat Lamaran</label>
             <textarea id="teks_lamaran" name="teks_lamaran" rows="20" cols="60"></textarea>
