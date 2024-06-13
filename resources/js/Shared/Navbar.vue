@@ -16,7 +16,7 @@ import {Link} from '@inertiajs/vue3'
         <nav>
             <a href="index.html"><img class="logo" src="/logo.png" alt="logo" height="30px"></a>
             <ul id="unlist">
-                <li><a class="lowongan" href="Cari_Lowongan.html">Cari Lowongan</a></li>
+                <li><a class="lowongan" href="/search">Cari Lowongan</a></li>
                 <li><a href="Pelatihan.html">Pelatihan</a></li>
                 <li><a href="artikel.html">Artikel</a></li>
                 <li><a href="#aboutUs">Tentang Kami</a></li>

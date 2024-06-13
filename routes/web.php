@@ -1,9 +1,11 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DetailController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PokeController;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -45,3 +47,13 @@ Route::get('/login', [LoginController::class, 'login'])
 
 Route::get('/', [HomeController::class, 'index'])
     ->name('home.index');
+
+Route::get('/search',[SearchController::class,'index'])
+    ->name('cari.index');
+
+Route::get('/detail',[DetailController::class,'index'])
+    ->name('detail.index');
+
+Route::get('/search/{keyword}', [SearchController::class, 'search']);
+
+Route::get('/detail/{idLowongan}', [DetailController::class, 'detail']);

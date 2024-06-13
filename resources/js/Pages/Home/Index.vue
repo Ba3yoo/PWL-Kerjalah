@@ -1,9 +1,6 @@
 <script setup>
-
-
 import Navbar from "@/Shared/Navbar.vue";
 import Footer from "@/Shared/Footer.vue";
-
 </script>
 
 <style scoped>
@@ -12,13 +9,12 @@ import Footer from "@/Shared/Footer.vue";
 
 @import '/resources/css/normalize.css';
 @import '/resources/css/main.css';
-
 </style>
 
 <template>
-    <body>
+<body>
 
-<Navbar></Navbar>
+    <Navbar></Navbar>
 
     <div class="homeBack" style="background-image: url('/homeImageDark.jpg')">
         <div>
@@ -75,10 +71,7 @@ import Footer from "@/Shared/Footer.vue";
 
     <Footer></Footer>
 
-    </body>
-
-
-
+</body>
 </template>
 
 <style scoped>
