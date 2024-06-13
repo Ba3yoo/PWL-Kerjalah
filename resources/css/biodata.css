@@ -1,3 +1,7 @@
+textarea {
+    resize: none;
+  }
+
 .outer-container {
     background-image: url("/homeImageRed.png");
     background-size: cover;

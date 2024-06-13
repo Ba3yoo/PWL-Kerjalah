@@ -196,6 +196,14 @@ p {
 .apply:hover {
   background-color: #710000;
 }
+.apply a:link, .apply :visited {
+  color: #ffffff;
+}
+
+.apply a:hover {
+  color: white;
+  background-color: #FF5757;
+}
 
 .jobInfo {
   background-color: white;

@@ -25,35 +25,19 @@ export default {
 
 
     <div class="container">
-        <div>
-            <!-- <img src="/pngwing.com (1).png" alt="profile" width="90px" onclick="redirectToPage()"
-                 style="width: 25px; height: 25px; border-radius: 100px; margin-left: 430px; position: absolute; margin-top:-15px;  cursor:pointer;
-              "> -->
-        </div>
-
+        <label  for="lamaran-form" style="margin-top: 10px; font-size: 30px;">Form Lamaran</label>
+        <p>{{lowongan.nama_perusahaan}} / {{lowongan.jabatan}}</p>
+            
 
         <form action="/profil/riwayat-pendidikan/new" method="post">
-            <!-- <input type="hidden" name="user_id" :value="biodata.user_id"> -->
-            <!-- <input type="hidden" name="_token" value="{{ csrf_token() }}" /> -->
-            <label  for="nama-lengkap" style="margin-top: 10px;">Placeholder</label>
-            <!-- <select id="jenis-kelamin" name="jenjang_pendidikan" style="height: 40px; width: 215px;">
-                <option value="SD">SD</option>
-                <option value="SMP">SMP</option>
-                <option value="SMA">SMA</option>
-                <option value="S1">S1</option>
-                <option value="S2">S2</option>
-                <option value="S3">S3</option>
-            </select> -->
 
-            <label for="nama-sekolah">PLACE2</label>
-            <input type="text" id="nama_instansi" name="nama_instansi"  >
+            <label for="isi-surat">Surat Lamaran</label>
+            <textarea id="surat_lamaran" name="surat_lamaran" rows="20" cols="60"></textarea>
+            
+            <label for="link-cv">Link CV</label>
+            <input type="text" id="cv_link" name="cv_link"  >
 
-
-
-            <label for="Periode">PLACE3</label>
-            <input type="date" id="tanggal_lulus" name="tanggal_lulus" required>
-
-            <input id="login" type="submit" value="Simpan">
+            <input id="send_lamar" type="submit" value="Simpan">
         </form>
 
     </div>
