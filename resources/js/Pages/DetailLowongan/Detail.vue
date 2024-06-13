@@ -28,9 +28,9 @@ onMounted(() => {
 
     <div class="homeBack" style="background-image: url('/noka.jpg')">
         <div>
-          <img src=props.logo alt="logo">
+          <img v-bind:src=lowongan.logo alt="logo">
             <p>NOKA - NOU Creative Group</p>
-            <h1>Account Manager</h1>
+            <h1>{{lowongan.jabatan}}</h1>
         </div>
     </div>
 
@@ -106,7 +106,7 @@ onMounted(() => {
 export default {
   props: {
     lowongan: {
-      type: Array,
+      type: Object,
       required: true
     }
   }
