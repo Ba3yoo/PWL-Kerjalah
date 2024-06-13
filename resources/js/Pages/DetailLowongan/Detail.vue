@@ -9,7 +9,10 @@ onMounted(() => {
   script.crossOrigin = "anonymous";
   document.head.appendChild(script);
 });
-
+const navigateToApply = () => {
+  const applyUrl = `/apply/${lowongan.id_lowongan}`;
+  window.location.href = applyUrl;
+};
 </script>
 
 <style scoped>
@@ -45,7 +48,7 @@ onMounted(() => {
             </div>
         </div>
         <div class="rightCard">
-            <div class="apply" style="cursor: pointer">Kirim Lamaran</div>
+            <div class="apply" style="cursor: pointer"><a :href="'../apply/' + lowongan.id_lowongan" style="text-decoration: none">Kirim Lamaran</a></div>
             <div class="jobInfo">
                 <i class="fa-solid fa-dollar-sign"></i>
                 {{ formatCurrency(lowongan.gaji) }}<br>
@@ -84,4 +87,6 @@ export default {
   },
 
 };
+
+
 </script>

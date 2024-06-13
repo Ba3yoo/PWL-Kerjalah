@@ -1,14 +1,13 @@
 <script>
 
-// // export default {
-// //     props: {
-// //         biodata: Object,
-// //         email: String
-// //     },
-// //     mounted() {
-// //         console.log(this.biodata);
-// //     }
-// }
+export default {
+  props: {
+    lowongan: {
+      type: Object,
+      required: true
+    }
+  }
+}
 
 </script>
 

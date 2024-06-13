@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApplyController;
 use App\Http\Controllers\BiodataController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DetailController;
@@ -66,6 +67,10 @@ Route::get('/search/{keyword}', [SearchController::class, 'search']);
 
 Route::get('/detail/{idLowongan}', [DetailController::class, 'detail']);
 
+Route::get('/apply/{idLowongan}', [ApplyController::class, 'apply']);
+
+Route::get('/apply', [ApplyController::class, 'index']);
+
 Route::post('/register/new', [UserController::class, 'store'])
     ->name('user.store');
 
@@ -74,7 +79,6 @@ Route::post('/biodata/new', [BiodataController::class, 'store'])
 
 Route::post('/login/auth', [UserController::class, 'auth'])
     ->name('user.auth');
-
 
 Route::get('/logout', [UserController::class, 'logout'])
     ->name('user.logout');
