@@ -45,8 +45,7 @@ function redirectToPage() {
                 <li class="profilImage" v-if="logged"><a href="/profil"><img src="/profile.png" alt="profile" width="35px" style="margin-top: -10px"></a></li>
                 <li class="profil" v-if="logged"><a href="profil.html">Profil</a></li>
             </ul>
-            <button onclick="shout()">ada</button>
-            <a href="/logout">dada</a>
+            
             <button class="hamburger" @click="expand"><span class="material-symbols-outlined">menu</span></button>
         </nav>
 
