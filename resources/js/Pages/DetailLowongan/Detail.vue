@@ -53,7 +53,7 @@ const navigateToApply = () => {
                 <i class="fa-solid fa-dollar-sign"></i>
                 {{ formatCurrency(lowongan.gaji) }}<br>
                 <i class="fa-regular fa-building"></i>
-                {{lowongan.industri}}<br>
+                {{lowongan.domisili}}<br>
                 <i class="fa-regular fa-clock"></i>
                 {{lowongan.jam_kerja}} jam <br>
                 <i class="fa-regular fa-user"></i>

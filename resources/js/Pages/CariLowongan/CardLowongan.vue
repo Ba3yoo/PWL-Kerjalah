@@ -59,7 +59,7 @@ const navigateToDetail = () => {
         <img v-bind:src=props.logo alt="logo">
         <h3>{{ props.jabatan }}</h3>
         <p>Rp. {{ props.gaji }}</p>
-        <p> {{ props.id_perusahaan }}</p>
+        <p> {{ props.domisili }}</p>
         <p> {{ props.nama_perusahaan }}</p>
 
         <div style="text-align: right; margin-top: 30px;">
