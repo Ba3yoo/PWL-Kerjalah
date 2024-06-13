@@ -1,0 +1,280 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 12pt;
+}
+
+.accordion-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.accordion-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    gap: 0px;
+
+}
+
+.logout {
+    position: absolute;
+    /*right: 0;*/
+    top: -60px;
+    color: #710000 !important;
+    background-color: #437C90;
+    z-index: 200;
+    /*display: inline-block;*/
+}
+
+.footin {
+    position: relative;
+}
+
+.accordion-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    gap: 0px;
+    margin-bottom: 100px;
+
+}
+.accordion {
+    color: white !important;
+}
+
+.accordion {
+    background-color: #b16b74;
+    color: #444;
+
+    padding: 18px;
+    text-align: left;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+    outline: none;
+    transition: 0.4s;
+    color: #710000
+}
+
+/* .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 18px;
+  background-color: #eee;
+  border-radius: 0px 0px 10px 10px;
+  transition: max-height 0.4s;
+  margin-bottom: 10px;
+  color: #710000
+} */
+.accordion-content {
+    max-height: auto;
+    overflow: hidden;
+    padding: 0 18px;
+    background-color: #eee;
+    border-radius: 0px 0px 10px 10px;
+    transition: max-height 0.4s;
+    margin-bottom: 10px;
+    color: #710000;
+}
+
+.footer h1, .footer p {
+    color: white;
+}
+
+
+.active {
+    background-color: #b16b74;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.active+.accordion-content {
+    max-height: auto;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1100px) {
+    .accordion-wrapper {
+        flex-basis: 100%;
+        padding-left: 10%;
+        margin-right: 10px;
+        padding-right: 5%;
+
+
+    }
+
+    .accordion-wrapper2 {
+        flex-basis: 100%;
+        padding-left: 10%;
+        margin-right: 10px;
+
+        padding-right: 5%;
+
+    }
+
+    /* .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 18px;
+    background-color: #eee;
+    border-radius: 0px 0px 10px 10px;
+    transition: max-height 0.4s;
+    margin-bottom: 10px;
+    color: #710000
+  } */
+}
+
+
+@media screen and (min-width: 1101px) {
+
+    .accordion-container {
+        flex-wrap: nowrap;
+
+    }
+
+    .accordion-wrapper {
+        flex-basis: 100%;
+        padding-left: 10%;
+        margin-right: 10px;
+
+
+
+
+    }
+
+    .accordion-wrapper2 {
+        flex-basis: 100%;
+        padding-right: 10%;
+
+    }
+}
+
+
+
+
+
+.box {
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    background-color: #589eb9;
+    padding: 10px;
+    margin-left: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+
+
+}
+.box:hover{
+    cursor:pointer;
+}
+
+.box2 {
+    width: 100px;
+    height: 30px;
+    background-color: #589eb9;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 0;
+    float: right;
+    margin-top: -70px;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box2:hover{
+    cursor:pointer;
+}
+
+@media (max-width: 500px) {
+    .box,
+    .box2 {
+        float: none;
+        margin: 20px auto;
+    }
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+    /* Added to align items to the top */
+    padding-left: 10%;
+}
+
+.container>div {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.container form {
+    margin-bottom: 0;
+}
+
+h1 {
+
+    color: #710000;
+    text-align: left;
+    margin-top: 0;
+    /* Added to remove default margin */
+}
+
+h2 {
+    color: #710000;
+    margin-top: 50px;
+}
+
+p {
+    color: #710000;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #710000;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #710000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #600000;
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        justify-content: space-between;
+        align-items: flex-start;
+        /* Added to align items to the top */
+    }
+
+    .container>div {
+        width: 90%;
+        max-width: initial;
+    }
+}

@@ -17,11 +17,22 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+
+//    protected $table = 'user';
+
     protected $fillable = [
-        'name',
+//        'user_id',
+        'username',
         'email',
         'password',
+        'role'
     ];
+
+    public function biodata()
+    {
+        return $this->hasOne(Biodata::class);
+    }
+
 
     /**
      * The attributes that should be hidden for serialization.
