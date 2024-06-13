@@ -71,6 +71,8 @@ Route::get('/apply/{idLowongan}', [ApplyController::class, 'apply']);
 
 Route::get('/apply', [ApplyController::class, 'index']);
 
+Route::post('/apply/store-application', [ApplyController::class, 'storeAppli']);
+
 Route::post('/register/new', [UserController::class, 'store'])
     ->name('user.store');
 

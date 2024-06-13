@@ -48,7 +48,7 @@ const navigateToApply = () => {
             </div>
         </div>
         <div class="rightCard">
-            <div class="apply" style="cursor: pointer"><a :href="'../apply/' + lowongan.id_lowongan" style="text-decoration: none">Kirim Lamaran</a></div>
+            <a class="apply" style="cursor: pointer; text-decoration: none" :href="'../apply/' + lowongan.id_lowongan">Kirim Lamaran</a>
             <div class="jobInfo">
                 <i class="fa-solid fa-dollar-sign"></i>
                 {{ formatCurrency(lowongan.gaji) }}<br>
