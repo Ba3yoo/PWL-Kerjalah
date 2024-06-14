@@ -16,6 +16,7 @@ for (i = 0; i < accordions.length; i++) {
         }
     });
 }
+
 </script>
 
 <style scoped>
@@ -41,32 +42,35 @@ for (i = 0; i < accordions.length; i++) {
     <div class="accordion-wrapper">
         <div class="accordion">
             <b> Apa itu Kerjalah?</b>
+            <p>Kerjalah adalah sebuah platform pencarian kerja yang didedikasikan untuk membantu individu, baik yang
+              memiliki disabilitas maupun yang tidak, dalam mencari pekerjaan. Website ini juga menawarkan fitur pelatihan
+              untuk meningkatkan keterampilan pengguna.</p>
         </div>
         <div class="accordion-content">
-            <p>Kerjalah adalah sebuah platform pencarian kerja yang didedikasikan untuk membantu individu, baik yang
-                memiliki disabilitas maupun yang tidak, dalam mencari pekerjaan. Website ini juga menawarkan fitur pelatihan
-                untuk meningkatkan keterampilan pengguna.</p>
+            
         </div>
 
         <div class="accordion">
             <b> Bagaimana cara menggunakan website pencari pekerjaan ini?</b>
+            <p>Untuk menggunakan website pencari pekerjaan kami, Anda perlu membuat akun pengguna. Setelah itu, Anda dapat
+              mencari pekerjaan berdasarkan kata kunci, lokasi, kategori pekerjaan, atau perusahaan tertentu. Setelah
+              menemukan pekerjaan yang diminati, Anda dapat melamar dengan mengirimkan resume dan mengisi formulir aplikasi
+              online.</p>
         </div>
         <div class="accordion-content">
-            <p>Untuk menggunakan website pencari pekerjaan kami, Anda perlu membuat akun pengguna. Setelah itu, Anda dapat
-                mencari pekerjaan berdasarkan kata kunci, lokasi, kategori pekerjaan, atau perusahaan tertentu. Setelah
-                menemukan pekerjaan yang diminati, Anda dapat melamar dengan mengirimkan resume dan mengisi formulir aplikasi
-                online.</p>
+            
         </div>
 
         <div class="accordion">
             <b> Apakah penggunaan website pencari pekerjaan ini gratis?</b>
+            <p>Banyak website pencari kerja menawarkan fitur dasar secara gratis, seperti mencari pekerjaan dan melamar.
+              Namun, beberapa juga menawarkan langganan berbayar dengan manfaat tambahan, seperti akses ke pekerjaan premium
+              atau alat pencarian yang lebih canggih. Untuk website ini kamu bisa bebas mencari dan melamar ke berbagai
+              pekerjaan yang tersedia dengan gratis. Akan tetapi untuk fitur pelatihan akan ada biaya tambahan yang
+              dikenakan pada pengguna.</p>
         </div>
         <div class="accordion-content">
-            <p>Banyak website pencari kerja menawarkan fitur dasar secara gratis, seperti mencari pekerjaan dan melamar.
-                Namun, beberapa juga menawarkan langganan berbayar dengan manfaat tambahan, seperti akses ke pekerjaan premium
-                atau alat pencarian yang lebih canggih. Untuk website ini kamu bisa bebas mencari dan melamar ke berbagai
-                pekerjaan yang tersedia dengan gratis. Akan tetapi untuk fitur pelatihan akan ada biaya tambahan yang
-                dikenakan pada pengguna.</p>
+            
         </div>
 
     </div>
@@ -74,32 +78,35 @@ for (i = 0; i < accordions.length; i++) {
     <div class="accordion-wrapper2">
         <div class="accordion">
             <b> Bisakah saya mengunggah resume ke website pencari kerja?</b>
+            <p>Ya, sebagian besar website pencari kerja memungkinkan pengguna mengunggah resume mereka. Ini memudahkan
+              perekrut melihat profil Anda dan mempertimbangkan Anda untuk pekerjaan yang relevan. Pastikan resume Anda
+              terbaru dan mencakup informasi yang relevan tentang pengalaman kerja, pendidikan, dan keterampilan. Anda bisa
+              mengunggah resume ketika telah melakukan login pada website ini.</p>
         </div>
         <div class="accordion-content">
-            <p>Ya, sebagian besar website pencari kerja memungkinkan pengguna mengunggah resume mereka. Ini memudahkan
-                perekrut melihat profil Anda dan mempertimbangkan Anda untuk pekerjaan yang relevan. Pastikan resume Anda
-                terbaru dan mencakup informasi yang relevan tentang pengalaman kerja, pendidikan, dan keterampilan. Anda bisa
-                mengunggah resume ketika telah melakukan login pada website ini.</p>
+            
         </div>
 
         <div class="accordion">
             <b> Bagaimana cara membuat akun pengguna di website pencari pekerjaan ini? </b>
+            <p>Untuk membuat akun pengguna, caranya cukup mudah. Anda dapat mengklik tombol "Daftar" atau "Buat Akun" yang
+              biasanya terletak di halaman utama. Kemudian, Anda akan diminta untuk mengisi formulir pendaftaran dengan
+              informasi pribadi seperti nama, alamat email, dan kata sandi. Setelah mengisi formulir, klik tombol "Daftar"
+              atau "Buat Akun" untuk menyelesaikan proses pendaftaran.</p>
         </div>
         <div class="accordion-content">
-            <p>Untuk membuat akun pengguna, caranya cukup mudah. Anda dapat mengklik tombol "Daftar" atau "Buat Akun" yang
-                biasanya terletak di halaman utama. Kemudian, Anda akan diminta untuk mengisi formulir pendaftaran dengan
-                informasi pribadi seperti nama, alamat email, dan kata sandi. Setelah mengisi formulir, klik tombol "Daftar"
-                atau "Buat Akun" untuk menyelesaikan proses pendaftaran.</p>
+            
         </div>
 
         <div class="accordion">
             <b>Apakah ada biaya yang harus dibayarkan untuk mengikuti pelatihan?</b>
+            <p>Biaya pelatihan dapat bervariasi tergantung pada jenis pelatihan dan penyedia layanan yang bekerja sama
+              dengan website ini. Beberapa pelatihan mungkin gratis, sementara yang lain mungkin memerlukan biaya tertentu.
+              Pastikan untuk melihat detail dan informasi harga terkait dengan setiap pelatihan sebelum memutuskan untuk
+              mendaftar.</p>
         </div>
         <div class="accordion-content">
-            <p>Biaya pelatihan dapat bervariasi tergantung pada jenis pelatihan dan penyedia layanan yang bekerja sama
-                dengan website ini. Beberapa pelatihan mungkin gratis, sementara yang lain mungkin memerlukan biaya tertentu.
-                Pastikan untuk melihat detail dan informasi harga terkait dengan setiap pelatihan sebelum memutuskan untuk
-                mendaftar.</p>
+            
         </div>
 
     </div>
