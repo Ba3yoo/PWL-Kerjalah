@@ -1,6 +1,5 @@
 <script setup>
 document.title = 'Apply';
-
 </script>
 
 

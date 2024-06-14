@@ -17,4 +17,9 @@ class Apply extends Model
         'teks_lamaran',
         'cv_link'
     ];
+
+    public function lowongan()
+    {
+        return $this->belongsTo(Lowongan::class, 'id_lowongan');
+    }
 }

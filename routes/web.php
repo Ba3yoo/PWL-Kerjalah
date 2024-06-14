@@ -103,6 +103,9 @@ Route::post('/profil/riwayat-pendidikan/new', [ProfilController::class, 'storeRi
 Route::get('/profil/riwayat-pekerjaan', [ProfilController::class, 'riwayatPekerjaan'])
     ->name('profil.riwayatPekerjaan');
 
+Route::get('/profil/riwayat-pendidikan', [ProfilController::class, 'riwayatPendidikan'])
+    ->name('profil.riwayatPendidikan');
+    
 Route::get('/artikel', [HomeController::class, 'artikel'])
     ->name('home.artikel');
 

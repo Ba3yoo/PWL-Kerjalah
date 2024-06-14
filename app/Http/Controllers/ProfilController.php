@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Biodata;
 use App\Models\RiwayatPekerjaan;
 use App\Models\RiwayatPendidikan;
+use App\Models\Apply;
+use App\Models\Lowongan;
+use App\Models\Perusahaan;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -18,10 +21,14 @@ class ProfilController extends Controller
         $biodata = Biodata::where('user_id', $user_id)->first();
         $riwayatPekerjaan = RiwayatPekerjaan::where('user_id', $user_id)->get();
         $riwayatPendidikan = RiwayatPendidikan::where('user_id', $user_id)->get();
-
+        $lamaran = Apply::leftJoin('lowongan', 'lamaran.id_lowongan', '=', 'lowongan.id_lowongan')
+                        ->leftJoin('perusahaan', 'lowongan.id_perusahaan', '=', 'perusahaan.id_perusahaan')
+                        ->where('lamaran.user_id', '=', $user_id)
+                        ->get();
+        // dd($lamaran);
 
         return Inertia::render('Profil/Index', ['biodata' => $biodata, 'email' => $email,
-            'riwayatPekerjaan' => $riwayatPekerjaan, 'riwayatPendidikan' => $riwayatPendidikan]);
+            'riwayatPekerjaan' => $riwayatPekerjaan, 'riwayatPendidikan' => $riwayatPendidikan, 'lamaran' => $lamaran]);
     }
 
     public function biodata()
@@ -29,6 +36,7 @@ class ProfilController extends Controller
         $user_id = session('user_id');
         $email = session('email');
         $biodata = Biodata::where('user_id', $user_id)->first();
+        
         return Inertia::render('Profil/Biodata', ['biodata' => $biodata, 'email' => $email]);
     }
 
