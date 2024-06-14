@@ -45,7 +45,7 @@ document.title = 'Home';
         <div class="secText">
             <h1>Semua bisa bekerja!</h1>
             <p>Kerjalah menyediakan website inovatif dengan fitur ramah disabilitas. Temukan peluang karir yang sesuai dengan minat, keterampilan, dan kebutuhan Anda. Bersama-sama, wujudkan lingkungan kerja inklusif di mana setiap orang memiliki kesempatan yang setara. Bergabunglah dengan kami dan jadilah bagian dari perubahan yang luar biasa ini!</p>
-            <button class="reg" onclick="redirectToPage()" style="cursor: pointer">Daftar Sekarang</button>
+            <button class="reg" @click="regs" style="cursor: pointer">Daftar Sekarang</button>
         </div>
     </div>
 

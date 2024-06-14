@@ -19,7 +19,7 @@ class DetailController extends Controller
     $lowongan = Lowongan::leftJoin('perusahaan', 'lowongan.id_perusahaan', '=', 'perusahaan.id_perusahaan')
         ->where('lowongan.id_lowongan', '=', $idLowongan)
         ->first();
-        
+        // dd($lowongan);
     return Inertia::render('DetailLowongan/Detail', ['lowongan' => $lowongan]);
 }
 
