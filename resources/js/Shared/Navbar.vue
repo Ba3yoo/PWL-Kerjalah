@@ -38,7 +38,7 @@ function redirectToPage() {
                 <li><a class="lowongan" href="/search">Cari Lowongan</a></li>
                 <li><a href="/artikel">Artikel</a></li>
                 <li><a href="../#aboutUs">Tentang Kami</a></li>
-                <li><a href="HubungiKami.html">Tanya Jawab</a></li>
+                <li><a href="/faq">Tanya Jawab</a></li>
                 <li class="login" v-if="!logged"><a href="/login">Login</a></li>
                 <li class="daftar" v-if="!logged"><a href="/register">Daftar Sekarang</a></li>
                 <li class="login" v-if="logged"><a href="/logout">Logout</a></li>

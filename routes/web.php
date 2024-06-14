@@ -106,5 +106,6 @@ Route::get('/profil/riwayat-pekerjaan', [ProfilController::class, 'riwayatPekerj
 Route::get('/artikel', [HomeController::class, 'artikel'])
     ->name('home.artikel');
 
-
+Route::get('/faq', [HomeController::class, 'faq'])
+    ->name('home.faq');
 

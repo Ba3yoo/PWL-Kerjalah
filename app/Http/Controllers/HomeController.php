@@ -21,6 +21,10 @@ class HomeController extends Controller
     {
         return Inertia::render('Artikel/Index');
     }
+    public function faq(): Response
+    {
+        return Inertia::render('Faq/Index');
+    }
 
 
 }
