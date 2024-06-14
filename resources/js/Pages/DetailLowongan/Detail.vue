@@ -1,7 +1,8 @@
 <script setup>
 import Navbar from "@/Shared/Navbar.vue";
 import Footer from "@/Shared/Footer.vue";
-import { onMounted } from 'vue';
+// import { onMounted } from 'vue';
+import {ref, onMounted} from "vue";
 
 onMounted(() => {
   const script = document.createElement('script');
@@ -15,6 +16,12 @@ const navigateToApply = () => {
 };
 
 document.title ='Detail';
+
+const logged = ref(false)
+
+if (getSessionEmail() !== "") {
+    logged.value = true;
+}
 
 </script>
 
@@ -51,9 +58,11 @@ document.title ='Detail';
             </div>
         </div>
         <div class="rightCard">
-            <a class="apply" style="cursor: pointer; text-decoration: none" :href="'../apply/' + lowongan.id_lowongan">Kirim Lamaran</a>
+            <a class="apply" v-if="logged" style="cursor: pointer; text-decoration: none" :href="'../apply/' + lowongan.id_lowongan">Kirim Lamaran</a>
+            <a class="apply" v-if="!logged" style="cursor: pointer; text-decoration: none" :href="'/login'">Kirim Lamaran</a>
+
             <div class="jobInfo">
-                <i class="fa-solid fa-dollar-sign"></i>
+                <i class="fa-solid fa-rupiah-sign"></i>
                 {{ formatCurrency(lowongan.gaji) }}<br>
                 <i class="fa-regular fa-building"></i>
                 {{lowongan.domisili}}<br>

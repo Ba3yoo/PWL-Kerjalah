@@ -42,9 +42,7 @@ for (i = 0; i < accordions.length; i++) {
     <div class="accordion-wrapper">
         <div class="accordion">
             <b> Apa itu Kerjalah?</b>
-            <p>Kerjalah adalah sebuah platform pencarian kerja yang didedikasikan untuk membantu individu, baik yang
-              memiliki disabilitas maupun yang tidak, dalam mencari pekerjaan. Website ini juga menawarkan fitur pelatihan
-              untuk meningkatkan keterampilan pengguna.</p>
+            <p>Kerjalah adalah sebuah platform pencarian kerja yang didedikasikan untuk membantu individu dalam mencari pekerjaan.</p>
         </div>
         <div class="accordion-content">
             
@@ -77,7 +75,7 @@ for (i = 0; i < accordions.length; i++) {
 
     <div class="accordion-wrapper2">
         <div class="accordion">
-            <b> Bisakah saya mengunggah resume ke website pencari kerja?</b>
+            <b> Bisakah saya mengunggah resume ke website ini?</b>
             <p>Ya, sebagian besar website pencari kerja memungkinkan pengguna mengunggah resume mereka. Ini memudahkan
               perekrut melihat profil Anda dan mempertimbangkan Anda untuk pekerjaan yang relevan. Pastikan resume Anda
               terbaru dan mencakup informasi yang relevan tentang pengalaman kerja, pendidikan, dan keterampilan. Anda bisa
@@ -87,13 +85,13 @@ for (i = 0; i < accordions.length; i++) {
             
         </div>
 
-        <div class="accordion">
+        <!-- <div class="accordion">
             <b> Bagaimana cara membuat akun pengguna di website pencari pekerjaan ini? </b>
             <p>Untuk membuat akun pengguna, caranya cukup mudah. Anda dapat mengklik tombol "Daftar" atau "Buat Akun" yang
               biasanya terletak di halaman utama. Kemudian, Anda akan diminta untuk mengisi formulir pendaftaran dengan
               informasi pribadi seperti nama, alamat email, dan kata sandi. Setelah mengisi formulir, klik tombol "Daftar"
               atau "Buat Akun" untuk menyelesaikan proses pendaftaran.</p>
-        </div>
+        </div> -->
         <div class="accordion-content">
             
         </div>
@@ -125,13 +123,13 @@ for (i = 0; i < accordions.length; i++) {
             senang hati menjawab pertanyaan Anda dan memberikan bantuan yang Anda butuhkan.
         </p>
         <div>
-            <h2>Atau hubungi kami melalui</h2>
+            <h2>Hubungi kami melalui</h2>
             <p>081234567890<br>kerjalah.dev@gmail.com</p>
             <p>Jam operasional: 08.00 - 17.00</p>
         </div>
     </div>
 
-    <div>
+    <!-- <div>
         <form>
             <div>
                 <label for="nama">Nama</label>
@@ -155,7 +153,7 @@ for (i = 0; i < accordions.length; i++) {
 
             <button type="submit">Kirim</button>
         </form>
-    </div>
+    </div> -->
 </div>
 
 <Footer></Footer>

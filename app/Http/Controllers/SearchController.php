@@ -25,17 +25,10 @@ class SearchController extends Controller
             ->where('lowongan.jabatan', 'like', '%' . $keyword . '%')
             ->orWhere('lowongan.deskripsi', 'like', '%' . $keyword . '%')
             ->orWhere('lowongan.pengalaman_kerja', 'like', '%' . $keyword . '%')
+            ->orWhere('perusahaan.nama_perusahaan', 'like', '%' . $keyword . '%')
             ->get();
     
         return Inertia::render('CariLowongan/Cari', ['lowongan' => $lowongan]);
     }
-    // public function search($keyword)
-    // {
-    //     $lowongan = Lowongan::where('jabatan', 'like', '%' . $keyword . '%')
-    //                         ->orWhere('deskripsi', 'like', '%' . $keyword . '%')
-    //                         ->orWhere('pengalaman_kerja', 'like', '%' . $keyword . '%')
-    //                         ->get();
-    //     // Anda bisa menyesuaikan respons sesuai dengan kebutuhan, misalnya mengembalikan view atau JSON.
-    //     return Inertia::render('CariLowongan/Cari',['lowongan'=>$lowongan]);
-    // }
+
 }

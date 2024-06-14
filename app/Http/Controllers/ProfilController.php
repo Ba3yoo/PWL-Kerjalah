@@ -25,7 +25,6 @@ class ProfilController extends Controller
                         ->leftJoin('perusahaan', 'lowongan.id_perusahaan', '=', 'perusahaan.id_perusahaan')
                         ->where('lamaran.user_id', '=', $user_id)
                         ->get();
-        // dd($lamaran);
 
         return Inertia::render('Profil/Index', ['biodata' => $biodata, 'email' => $email,
             'riwayatPekerjaan' => $riwayatPekerjaan, 'riwayatPendidikan' => $riwayatPendidikan, 'lamaran' => $lamaran]);
@@ -36,7 +35,6 @@ class ProfilController extends Controller
         $user_id = session('user_id');
         $email = session('email');
         $biodata = Biodata::where('user_id', $user_id)->first();
-        
         return Inertia::render('Profil/Biodata', ['biodata' => $biodata, 'email' => $email]);
     }
 
@@ -45,7 +43,7 @@ class ProfilController extends Controller
 
         $data = $request->validate([
             'nama_lengkap' => 'required',
-            'user_id' => 'nullable',
+            'user_id' => 'required',
             'email' => 'required',
             'no_hp' => 'required',
             'tanggal_lahir' => 'required',
@@ -54,6 +52,7 @@ class ProfilController extends Controller
         ]);
         $user_id = session('user_id');
         $biodata = Biodata::where('user_id', $user_id)->first();
+
         $biodata->update($data);
 
         return redirect(route('profil.index'));
