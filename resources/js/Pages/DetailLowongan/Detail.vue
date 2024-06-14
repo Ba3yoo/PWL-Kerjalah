@@ -13,6 +13,9 @@ const navigateToApply = () => {
   const applyUrl = `/apply/${lowongan.id_lowongan}`;
   window.location.href = applyUrl;
 };
+
+document.title ='Detail';
+
 </script>
 
 <style scoped>

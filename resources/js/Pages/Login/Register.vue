@@ -1,5 +1,6 @@
 <script>
 
+document.title = 'Register';
 
 
 </script>

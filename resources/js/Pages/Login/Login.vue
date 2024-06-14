@@ -63,6 +63,7 @@ export default {
 // const wrongPassword = ref(false)
 
 // const props = defineProps(['passed_data'])
+document.title = 'Login';
 
 
 </script>

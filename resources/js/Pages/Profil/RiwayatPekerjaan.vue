@@ -10,6 +10,9 @@ export default {
     }
 }
 
+document.title = 'Riwayat Pekerjaan';
+
+
 </script>
 
 <style scoped>

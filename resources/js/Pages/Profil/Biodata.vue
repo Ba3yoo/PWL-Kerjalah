@@ -78,6 +78,9 @@ export default {
     }
 }
 
+document.title = 'Biodata';
+
+
 </script>
 
 <style scoped>

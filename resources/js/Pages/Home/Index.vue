@@ -13,7 +13,7 @@ function regs() {
     window.location.href = "/register";
 }
 
-document.title = 'Home'
+document.title = 'Home';
 
 </script>
 

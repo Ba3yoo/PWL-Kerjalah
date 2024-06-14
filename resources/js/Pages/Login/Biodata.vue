@@ -74,6 +74,7 @@ export default {
         user_id: String
     },
 }
+document.title = 'Biodata';
 
 </script>
 
