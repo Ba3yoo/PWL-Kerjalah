@@ -43,6 +43,10 @@ const navigateToDetail = () => {
   const detailUrl = `/detail/${props.id_lowongan}`;
   window.location.href = detailUrl;
 };
+function formatCurrency(value) {
+      if (!value) return '0';
+      return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
 </script>
 
 <style scoped>
@@ -58,7 +62,7 @@ const navigateToDetail = () => {
     <div class="box" style="position: relative">
         <img v-bind:src=props.logo alt="logo">
         <h3>{{ props.jabatan }}</h3>
-        <p>Rp. {{ props.gaji }}</p>
+        <p>Rp. {{ formatCurrency(props.gaji) }}</p>
         <p> {{ props.domisili }}</p>
         <p> {{ props.nama_perusahaan }}</p>
 
