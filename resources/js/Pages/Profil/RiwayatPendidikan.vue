@@ -1,3 +1,7 @@
+<script setup>
+document.title = 'Riwayat Pendidikan';
+</script>
+
 <script>
 
 export default {
@@ -9,9 +13,6 @@ export default {
         console.log(this.biodata);
     }
 }
-
-document.title = 'Riwayat Pendidikan';
-
 
 </script>
 

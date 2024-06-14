@@ -1,4 +1,6 @@
-
+<script setup>
+document.title = 'Biodata';
+</script>
 
 
 <style scoped>
@@ -77,8 +79,6 @@ export default {
         console.log(this.biodata);
     }
 }
-
-document.title = 'Biodata';
 
 
 </script>

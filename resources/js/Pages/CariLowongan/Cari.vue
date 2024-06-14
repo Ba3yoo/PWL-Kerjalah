@@ -13,6 +13,9 @@ const searchJobs = () => {
         window.location.href = url.href;
     }
 };
+
+document.title = 'Search';
+
 </script>
 
 <style scoped>

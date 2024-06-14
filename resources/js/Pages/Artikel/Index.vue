@@ -1,6 +1,9 @@
 <script setup>
 import Navbar from "@/Shared/Navbar.vue";
 import Footer from "@/Shared/Footer.vue";
+
+document.title = 'Article';
+
 </script>
 
 <style scoped>

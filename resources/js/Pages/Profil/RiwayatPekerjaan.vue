@@ -1,3 +1,6 @@
+<script setup>
+document.title = 'Riwayat Pekerjaan';
+</script>
 <script>
 
 export default {
@@ -9,9 +12,6 @@ export default {
         console.log(this.biodata);
     }
 }
-
-document.title = 'Riwayat Pekerjaan';
-
 
 </script>
 

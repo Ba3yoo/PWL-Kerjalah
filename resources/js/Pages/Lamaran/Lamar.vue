@@ -1,3 +1,9 @@
+<script setup>
+document.title = 'Apply';
+
+</script>
+
+
 <script>
 export default {
     props: {
@@ -11,8 +17,6 @@ export default {
         }
     }
 }
-
-document.title = 'Apply';
 
 </script>
 
