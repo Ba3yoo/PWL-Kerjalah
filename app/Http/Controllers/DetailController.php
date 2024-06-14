@@ -23,4 +23,9 @@ class DetailController extends Controller
     return Inertia::render('DetailLowongan/Detail', ['lowongan' => $lowongan]);
 }
 
+    public function map()
+    {
+        return Inertia::render('DetailLowongan/Map');
+    }
+
 }
