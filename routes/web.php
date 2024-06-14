@@ -111,6 +111,3 @@ Route::get('/artikel', [HomeController::class, 'artikel'])
 
 Route::get('/faq', [HomeController::class, 'faq'])
     ->name('home.faq');
-
-Route::get('/map', [DetailController::class, 'map']);
-
