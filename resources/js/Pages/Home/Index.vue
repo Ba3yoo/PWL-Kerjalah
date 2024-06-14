@@ -13,6 +13,8 @@ function regs() {
     window.location.href = "/register";
 }
 
+document.title = 'Home'
+
 </script>
 
 <style scoped>
