@@ -51,8 +51,12 @@ document.title = 'Biodata';
                 <div style="margin-left: 52%; margin-top: -74px;">
                     <label for="jenis-kelamin">Jenis Kelamin:</label>
                     <div class="form-row">
-                        <input type="text" id="jenis_kelamin" name="jenis_kelamin" class="full-input"
-                               placeholder="Jenis Kelamin" :value="biodata.jenis_kelamin" required>
+                        <select name="jenis_kelamin" id="jenis_kelamin" class="full-input" required style="height: 35px">
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+<!--                        <input type="text" id="jenis_kelamin" name="jenis_kelamin" class="full-input"-->
+<!--                               placeholder="Jenis Kelamin" :value="biodata.jenis_kelamin" required>-->
                     </div>
                 </div>
                 <label for="Domisili">Alamat:</label>
