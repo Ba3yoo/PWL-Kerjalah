@@ -11,21 +11,4 @@
 
 This project is used for learning for Advanced Web Programming Course focused for front-end.
 
-## File Changed
-
-```bash
-project
-├── tailwind.config.js (Added)
-├── postcss.config.js (Added)
-└── resources/
-    ├── css/
-    │   └── app.css (Changed)
-    ├── js/
-    │   ├── Pages/
-    │   │   └── Dashboard/
-    │   │       └── Login.vue (Changed)
-    │   └── Shared/
-    │       └── Layout.vue (Changed)
-    └── views/
-        └── app.blade.php (Changed
-```
+<img src="/public/screenshot/img1.png">
