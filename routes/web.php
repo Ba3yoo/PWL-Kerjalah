@@ -59,7 +59,7 @@ Route::get('/', [HomeController::class, 'index'])
     ->name('home.index');
 
 Route::controller(SearchController::class)->group(function(){
-    Route::get('/search', 'index');
+    Route::get('/search', 'index')->name('cari.index');
     Route::get('/search/{keyword}', 'search');
 });
 
