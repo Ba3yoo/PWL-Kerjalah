@@ -9,6 +9,15 @@
 
 ## About This Project
 
-This project is used for learning for Advanced Web Programming Course focused for front-end.
+Projek ini digunakan sebagai tugas akhir mata kuliah Pemrograman Web Lanjut.
 
 <img src="/public/screenshot/img1.png">
+<img src="/public/screenshot/img2.png">
+<img src="/public/screenshot/img3.png">
+<img src="/public/screenshot/img4.png">
+<img src="/public/screenshot/img5.png">
+<img src="/public/screenshot/img6.png">
+<img src="/public/screenshot/img7.png">
+<img src="/public/screenshot/img8.png">
+<img src="/public/screenshot/img9.png">
+<img src="/public/screenshot/img10.png">
