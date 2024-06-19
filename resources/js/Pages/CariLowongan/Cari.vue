@@ -53,13 +53,7 @@ document.title = 'Search';
         <div class="container">
             <div v-for="lowongan in lowongan" :key="lowongan.id_lowongan">
                 <CardLowongan 
-                    :id_lowongan="lowongan.id_lowongan"
-                    :jabatan="lowongan.jabatan"
-                    :id_perusahaan="lowongan.id_perusahaan"
-                    :domisili="lowongan.domisili"
-                    :gaji="lowongan.gaji"
-                    :nama_perusahaan="lowongan.nama_perusahaan"
-                    :logo="lowongan.logo"
+                    :lowongan="lowongan"
                 />
             </div>
         </div>
