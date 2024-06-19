@@ -33,13 +33,12 @@ function formatCurrency(value) {
 <template>
     <div class="box" style="position: relative">
         <img v-bind:src=lowongan.logo alt="logo">
-        <h3>{{ lowongan.id }}</h3>
+        <h3>{{ lowongan.jabatan }}</h3>
         <p>Rp. {{ formatCurrency(lowongan.gaji) }}</p>
         <p> {{ lowongan.domisili }}</p>
         <p> {{ lowongan.nama_perusahaan }}</p>
 
         <div style="text-align: right; margin-top: 30px;">
-          <!-- <div class="lowongan a"><a :href="'detail/' + props.id_lowongan" style="text-decoration: none">Selengkapnya</a></div>          -->
           <div class="lowongan a"><a href="#"@click="navigateToDetail" style="text-decoration: none">Selengkapnya</a></div>         
 
            <br>

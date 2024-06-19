@@ -31,17 +31,16 @@ document.title = 'Search';
 <body>
     <Navbar></Navbar>
 
-    <div style="height: 400px; background-image: url('/homeImageRed.png'); background-size: cover">
-        <h1 style="position: absolute; top: 150px; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 40pt; text-align: center">Temukan jalur karir anda!</h1>
-
-        <form @submit.prevent="searchJobs" style="position: absolute; top: 270px; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-            <input v-model="searchInput" type="text" placeholder="Cari pekerjaan..." style="padding: 10px; font-size: 16pt; width: 400px;">
-            <button type="submit" style="padding: 10px 20px; margin: 10px; font-size: 16pt; cursor: pointer;">
+    <div class="divCari" >
+        <h1 class="h1Cari" >Temukan jalur karir anda!</h1>
+        <form class="formCari" @submit.prevent="searchJobs" >
+            <input class="inputCari" v-model="searchInput" type="text" placeholder="Cari pekerjaan..." >
+            <button class="buttonCari" type="submit" >
                 Cari
             </button>
         </form>
     </div>
-    <div style="background-color: white; position: absolute; height: 100px; width: 99%; top: 400px; border-radius: 30px"></div>
+    <div class="border" style=""></div>
 
     <main style="position: relative">
         <div style="text-align: center;">
