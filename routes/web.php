@@ -85,27 +85,21 @@ Route::post('/login/auth', [UserController::class, 'auth'])
 Route::get('/logout', [UserController::class, 'logout'])
     ->name('user.logout');
 
-Route::get('/profil', [ProfilController::class, 'index'])
-    ->name('profil.index');
+Route::controller(ProfilController::class)->prefix('/profil')->group(function () {
+    Route::get('/', 'index')->name('profil.index');
+    Route::controller(ProfilController::class)->prefix('/biodata')->group(function () {
+        Route::get('/', 'biodata')->name('profil.biodata');
+        Route::post('/update', 'updateBiodata')->name('profil.update');
+    });
+    Route::controller(ProfilController::class)->prefix('/riwayat-pendidikan')->group(function () {
+        Route::get('/', 'riwayatPendidikan')->name('profil.riwayat-pendidikan');
+        Route::post('/new', 'storeRiwayatPendidikan')->name('profil.store-pendidikan');
+    });
+    Route::post('/store-pekerjaan', 'storeRiwayatPekerjaan')->name('profil.store-pekerjaan');
+    Route::get('/riwayat-pekerjaan', 'riwayatPekerjaan')->name('profil.riwayat-pekerjaan');
+});
 
-Route::get('/profil/biodata', [ProfilController::class, 'biodata'])
-    ->name('profil.biodata');
 
-Route::post('/profil/biodata/update', [ProfilController::class, 'updateBiodata'])
-    ->name('profil.updateBiodata');
-
-Route::post('/profil/store-pekerjaan', [ProfilController::class, 'storeRiwayatPekerjaan'])
-    ->name('profil.storeRiwayatPekerjaan');
-
-Route::post('/profil/riwayat-pendidikan/new', [ProfilController::class, 'storeRiwayatPendidikan'])
-    ->name('profil.storeRiwayatPendidikan');
-
-Route::get('/profil/riwayat-pekerjaan', [ProfilController::class, 'riwayatPekerjaan'])
-    ->name('profil.riwayatPekerjaan');
-
-Route::get('/profil/riwayat-pendidikan', [ProfilController::class, 'riwayatPendidikan'])
-    ->name('profil.riwayatPendidikan');
-    
 Route::get('/artikel', [HomeController::class, 'artikel'])
     ->name('home.artikel');
 
