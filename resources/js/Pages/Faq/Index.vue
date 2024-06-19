@@ -129,31 +129,6 @@ for (i = 0; i < accordions.length; i++) {
         </div>
     </div>
 
-    <!-- <div>
-        <form>
-            <div>
-                <label for="nama">Nama</label>
-                <input type="text" placeholder="Nama" id="nama" name="nama" required>
-            </div>
-
-            <div>
-                <label for="email">Alamat E-mail</label>
-                <input type="email" placeholder="Alamat E-mail" id="email" name="email" required>
-            </div>
-
-            <div>
-                <label for="subjek">Subjek permasalahan</label>
-                <input type="text" placeholder="Subjek permasalahan" id="subjek" name="subjek" required>
-            </div>
-
-            <div>
-                <label for="deskripsi">Deskripsi permasalahan</label>
-                <textarea id="deskripsi" placeholder="Deskripsi permasalahan" name="deskripsi" required></textarea>
-            </div>
-
-            <button type="submit">Kirim</button>
-        </form>
-    </div> -->
 </div>
 
 <Footer></Footer>

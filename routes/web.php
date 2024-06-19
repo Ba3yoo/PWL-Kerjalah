@@ -58,13 +58,10 @@ Route::get('/biodata', [LoginController::class, 'biodata'])
 Route::get('/', [HomeController::class, 'index'])
     ->name('home.index');
 
-Route::get('/search',[SearchController::class,'index'])
-    ->name('cari.index');
-
-Route::get('/detail',[DetailController::class,'index'])
-    ->name('detail.index');
-
-Route::get('/search/{keyword}', [SearchController::class, 'search']);
+Route::controller(SearchController::class)->group(function(){
+    Route::get('/search', 'index');
+    Route::get('/search/{keyword}', 'search');
+});
 
 Route::get('/detail/{idLowongan}', [DetailController::class, 'detail']);
 
