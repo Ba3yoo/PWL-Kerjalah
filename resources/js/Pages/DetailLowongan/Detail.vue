@@ -58,8 +58,9 @@ if (getSessionEmail() !== "") {
             </div>
         </div>
         <div class="rightCard">
-            <a class="apply" v-if="logged" style="cursor: pointer; text-decoration: none" :href="'../apply/' + lowongan.id_lowongan">Kirim Lamaran</a>
-            <a class="apply" v-if="!logged" style="cursor: pointer; text-decoration: none" :href="'/login'">Kirim Lamaran</a>
+            <!-- <a class="apply" v-if="logged" style="cursor: pointer; text-decoration: none" :href="'../apply/' + lowongan.id_lowongan">Kirim Lamaran</a> -->
+            <a class="apply" style="cursor: pointer; text-decoration: none" :href="'../apply/' + lowongan.id_lowongan">Kirim Lamaran</a>
+            <!-- <a class="apply" v-if="!logged" style="cursor: pointer; text-decoration: none" :href="'/login'">Kirim Lamaran</a> -->
 
             <div class="jobInfo">
                 <i class="fa-solid fa-rupiah-sign"></i>
