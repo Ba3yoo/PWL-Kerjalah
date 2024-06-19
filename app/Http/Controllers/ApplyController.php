@@ -11,6 +11,10 @@ use App\Models\Apply;
 
 class ApplyController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('login.mid');
+    }
     public function index(): Response
     {
         return Inertia::render('Lamaran/Lamar');

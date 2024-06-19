@@ -10,6 +10,7 @@ use App\Http\Controllers\PokeController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\UserController;
+use App\Http\Middleware\LoginMid;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -64,11 +65,17 @@ Route::controller(SearchController::class)->group(function(){
 
 Route::get('/detail/{idLowongan}', [DetailController::class, 'detail']);
 
-Route::get('/apply/{idLowongan}', [ApplyController::class, 'apply']);
+Route::controller(ApplyController::class)->group(function(){
+    Route::get('/apply/{idLowongan}', 'apply');
+    Route::get('/apply', 'index');
+    Route::post('/apply/store-application', 'storeAppli');
+})->middleware('login.mid');
 
-Route::get('/apply', [ApplyController::class, 'index']);
+// Route::get('/apply/{idLowongan}', [ApplyController::class, 'apply']);
 
-Route::post('/apply/store-application', [ApplyController::class, 'storeAppli']);
+// Route::get('/apply', [ApplyController::class, 'index']);
+
+// Route::post('/apply/store-application', [ApplyController::class, 'storeAppli']);
 
 Route::post('/register/new', [UserController::class, 'store'])
     ->name('user.store');
