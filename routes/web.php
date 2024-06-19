@@ -101,7 +101,7 @@ Route::controller(ProfilController::class)->prefix('/profil')->group(function ()
     });
     Route::post('/store-pekerjaan', 'storeRiwayatPekerjaan')->name('profil.store-pekerjaan');
     Route::get('/riwayat-pekerjaan', 'riwayatPekerjaan')->name('profil.riwayat-pekerjaan');
-});
+})->middleware('login.mid');
 
 
 Route::get('/artikel', [HomeController::class, 'artikel'])

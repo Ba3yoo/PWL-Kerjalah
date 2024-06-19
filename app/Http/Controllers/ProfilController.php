@@ -14,6 +14,10 @@ use Inertia\Inertia;
 class ProfilController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('login.mid');
+    }
     public function index()
     {
         $user_id = session('user_id');
