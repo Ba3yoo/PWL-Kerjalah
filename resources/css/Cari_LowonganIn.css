@@ -424,10 +424,47 @@ main {
     margin-right: 40px;
   }
 }
+.divCari{
+  height: 400px; 
+  background-image: url('/homeImageRed.png'); 
+  background-size: cover;
+}
+.h1Cari{
+  position: absolute; 
+  top: 150px; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: 40pt; 
+  text-align: center
+}
+.formCari{
+  position: absolute; 
+  top: 270px; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center;
+}
 
-
-
-
+.inputCari{
+  padding: 10px; 
+  font-size: 16pt; 
+  width: 400px;
+}
+.buttonCari{
+  padding: 10px 20px; 
+  margin: 10px; 
+  font-size: 16pt; 
+  cursor: pointer;
+}
+.border{
+  background-color: white; 
+  position: absolute; 
+  height: 100px; 
+  width: 100%; 
+  top: 375px; 
+  border-radius: 30px;
+}
 
 
 

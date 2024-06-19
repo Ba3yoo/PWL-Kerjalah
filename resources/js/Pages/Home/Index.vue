@@ -33,7 +33,7 @@ document.title = 'Home';
     <div class="homeBack" style="background-image: url('/homeImageDark.jpg')">
         <div>
             <h1>Kesempatan setara<br>untuk&nbsp;semua</h1>
-            <p>Temukan peluang kerja yang mendukung inklusi di Kerjalah,
+            <p>Temukan peluang kerja yang menarik di Kerjalah,
                 situs web yang memberikan aksesibilitas bagi semua individu untuk meraih kesuksesan karier.</p>
         </div>
 
@@ -44,7 +44,7 @@ document.title = 'Home';
         <img src="/gambarHome1.jpg" alt="Orang" height="300px">
         <div class="secText">
             <h1>Semua bisa bekerja!</h1>
-            <p>Temukan peluang karir yang sesuai dengan minat, keterampilan, dan kebutuhan Anda. Bersama-sama, wujudkan lingkungan kerja inklusif di mana setiap orang memiliki kesempatan yang setara. Bergabunglah dengan kami dan jadilah bagian dari perubahan yang luar biasa ini!</p>
+            <p>Temukan peluang karir yang sesuai dengan minat dan keterampilan Anda. Bersama-sama, kita wujudkan lingkungan kerja di mana setiap orang memiliki kesempatan untuk berkembang. Bergabunglah dengan kami dan jadilah bagian dari perjalanan menuju kesuksesan!</p>
             <button class="reg" @click="regs" style="cursor: pointer">Daftar Sekarang</button>
         </div>
     </div>
@@ -66,11 +66,11 @@ document.title = 'Home';
         </div>
         <div class="card">
             <h1>Tujuan</h1>
-            <p>Kerjalah berusaha menciptakan kesempatan kerja inklusif dan pelatihan kerja bagi semua individu, termasuk mereka dengan disabilitas. Dengan fitur-fitur yang ramah disabilitas, Kerjalah berusaha untuk membantu menciptakan peluang karir yang setara bagi semua orang.</p>
+            <p>Kerjalah berkomitmen untuk menyediakan kesempatan kerja dan pelatihan kerja bagi semua individu. Kami bertujuan membantu menciptakan peluang karir yang setara bagi semua orang melalui fitur-fitur yang ramah pengguna, memastikan setiap pencari kerja dapat menemukan pekerjaan yang sesuai dengan keterampilan dan minat mereka.</p>
         </div>
         <div class="card">
             <h1>Tim Pengembang</h1>
-            <p>Kerjalah dikembangkan oleh tim pengembang dari Universitas Brawijaya Fakultas Ilmu Komputer yang beranggotakan Halilintar Daiva, Muhammad Andra, Urdha Egha, Mohammad 'Alwan, Bayusatya Mufti. Untuk melaporkan permasalahan terkait website,
+            <p>Kerjalah dikembangkan oleh tim pengembang dari Universitas Brawijaya Fakultas Ilmu Komputer yang beranggotakan Halilintar Daiva Dirgantara, Muhammad Andra Dzaki, Urdha Egha Kirana, Mohammad 'Alwan Fauzi, Bayusatya Mufti Muhammad. Untuk melaporkan permasalahan terkait website,
                 <a href="/faq">hubungi tim pengembang</a></p>
         </div>
     </div>
@@ -78,7 +78,7 @@ document.title = 'Home';
     <div class="sec s4" v-if="!logged">
         <div class="secText">
             <h1>Daftarkan dirimu Sekarang!</h1>
-            <p>Bergabung bersama perusahaan-perusahaan yang telah terdaftar di Kerjalah dan dapatkan berbagai macam pelatihan untuk meningkatkan skill anda!</p>
+            <p>Bergabung bersama perusahaan-perusahaan yang telah terdaftar di Kerjalah dan dapatkan berbagai macam lowongan menarik untuk kesempatan kerja anda!</p>
             <button class="reg" @click="regs" style="cursor: pointer">Daftar Sekarang</button>
 
         </div>
